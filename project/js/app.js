@@ -28,9 +28,11 @@ var colorArray = [
     '#F2BBA7',
 ]
 
+
 window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
+   
 })
 
 window.addEventListener('resize', function () {
