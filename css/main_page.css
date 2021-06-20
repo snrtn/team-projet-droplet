@@ -79,7 +79,7 @@ body{
 .TL_foorter {
   width: 1000px;
   height: 400px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
 
   padding: 5px 0px;
   box-sizing: border-box;
@@ -131,13 +131,14 @@ body{
 .TR_foorter {
   width: 600px;
   height: 400px;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.5);
 }
 
 #bottom_foorter {
   width: var(--MainWidth);
-  height: 450px;
+  height: 400px;
+  margin-top: 50px;
 
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
 
 }
