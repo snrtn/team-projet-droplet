@@ -113,16 +113,16 @@ body{
 
 .nav_menu li {
   list-style: none;
-  text-align: center;
   width: 200px;
 }
 
 .nav_menu a {
+  text-align: center;
   text-decoration: none;
   color: #000;
 
   font-size: 18px;
-  padding: 8px 60px;
+  padding: 8px 30px;
   transition: 0.2s;
 }
 

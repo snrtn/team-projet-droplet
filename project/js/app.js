@@ -32,7 +32,6 @@ var colorArray = [
 window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
-   
 })
 
 window.addEventListener('resize', function () {
@@ -91,7 +90,7 @@ function init() {
 
     circleArray = [];
 
-    for (var i = 0; i < 800; i++) {
+    for (var i = 0; i < 1000; i++) {
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
         var dx = (Math.random() - 0.5);
