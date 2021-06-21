@@ -1,6 +1,9 @@
 /* Google Web Fonts CDN */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
 
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 * {
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -135,6 +138,13 @@ body{
   height: 400px;
   background-color: rgba(238, 238, 238, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.TR_foorter h2 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 5px 10px 10px 20px;
 }
 
 #bottom_foorter {
