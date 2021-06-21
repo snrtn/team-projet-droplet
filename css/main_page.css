@@ -8,7 +8,7 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* #################### 변수 var() #################### */
+/* ########## 변수 var() ########## */
 :root {
   --MainWidth: 1500px;
 }
@@ -20,7 +20,7 @@
   margin: 0;
 }
 
-/* #################### 스크롤 기능은 살리고 스크롤바는 없애기 #################### */
+/* ########## 스크롤 기능은 살리고 스크롤바는 없애기 ########## */
 
 body{
   -ms-overflow-style: none; 
@@ -30,9 +30,9 @@ body{
   display: none; 
 }
 
-/* #################### section #################### */
+/* ########## section ########## */
 
-#section {
+section {
   width: var(--MainWidth);
   height: 750px;
 
@@ -41,7 +41,7 @@ body{
   border: 1px solid #000;
 }
 
-#section:nth-child(4) {
+section:nth-child(4) {
   /* :last-child */
   position: absolute;
 
@@ -52,7 +52,7 @@ body{
   border: none;
 } 
 
-/* #################### footer #################### */
+/* ########## footer ########## */
 
 #my_footer {
   width: 100%;
