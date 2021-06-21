@@ -353,5 +353,11 @@ section:nth-child(4) {
   font-size: 100px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: normal;
+  font-style: italic;
   margin-left: 560px;
+  cursor: cell;
+}
+
+#bottom_foorter h2:hover {
+  color: rgba(0, 0, 0, 0.1);
 }
