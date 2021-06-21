@@ -32,7 +32,7 @@ body{
 
 /* ########## section ########## */
 
-#section {
+section {
   width: var(--MainWidth);
   height: 750px;
 
@@ -41,7 +41,7 @@ body{
   border: 1px solid #000;
 }
 
-#section:nth-child(4) {
+section:nth-child(4) {
   /* :last-child */
   position: absolute;
 
