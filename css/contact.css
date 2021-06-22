@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Reset CSS */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+/* Defalt CSS */
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+
+#container {/* body block요소이기 때문에 자동으로 브라우저 100% 크기로 맞춰집니다. */
+  margin: 0;
+  color: #333;
+}
+
+/* ########## 변수 var() ########## */
+:root {
+  --MainWidth: 1500px;
+}
+
+/* ########## 스크롤 기능은 살리고 스크롤바는 없애기 ########## */
+
+body{
+  -ms-overflow-style: none; 
+} 
+
+::-webkit-scrollbar {
+  display: none; 
+}
+
+/* ########## header ########## */
+header {
+  background-color: #302e2f;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-inner {
+  width: var(--MainWidth);
+  height: 90px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* logo design */
+.logo {
+  margin-right: 50px;
+}
+.logo a {
+  font-size: 24px;
+  position: relative;
+}
+.logo a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: ': 작은 물방울';
+  color: #ddd;
+  font-size: 12px;
+  padding-top: 3px;
+}
+.logo img {}
+
+/* nav design */
+nav {}
+.gnb {
+  display: flex;
+}
+.gnb li {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+}
+
+.gnb li a {
+  position: relative;
+}
+
+.gnb li:hover > a {
+  color: #d99578;
+}
+
+.gnb li:hover .menu {
+  display: block;
+}
+
+.menu {
+  display: none;
+  margin-top: 38px;
+  position: relative;
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(50% 30%, 0% 100%, 100% 100%);
+  background-color: #eee;
+}
+
+.menu li {
+  box-sizing: border-box;
+  background-color: #eee;
+  transition: 0.5s;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu li a {
+  color: #333;
+}
+
+.menu li:hover {
+  background-color: #d99578;
+}
+
+.menu li:hover a {
+  color: #eee;
+}
+
+/* side_box*/
+.side_box {
+  width: 100px;
+  padding: 12px 10px;
+}
+
+.search, 
+.hambuger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.search {
+  color: #ddd;
+  font-size: 21px;
+  margin: 0 10px 0 20px;
+
+}
+.hambuger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.hambuger span {
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: #d99578;
+  border-radius: 2px;
+  margin-top: 2px;
+  transition: 0.5s;;
+}
+
+.hambuger span:nth-child(1) {
+  top: 0;
+}
+.hambuger span:nth-child(2) {
+  top: 50%;
+}
+.hambuger span:nth-child(3) {
+  top: 100%;
+}
+
+.hambuger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.hambuger.active span:nth-child(2) {
+  display: none;
+}
+.hambuger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+/* sidenav */
+.sidenav {
+  position: absolute;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100vh;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+header.active .sidenav {
+  left: 0;
+}
