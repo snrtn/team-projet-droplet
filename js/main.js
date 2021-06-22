@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
   /* header - sidenav */
-  $('.hambuger').click(function(){
+  $('.hambuger').click(function () {
     $(this).toggleClass('active');
     $('header').toggleClass('active');
   });

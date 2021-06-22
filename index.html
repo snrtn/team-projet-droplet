@@ -10,7 +10,7 @@
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css" />
   <!-- Js -->
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body id="container">
@@ -62,11 +62,68 @@
   <!-- 여기에 작업자 성명을 써주세요. -->
   <section class="section01"></section>
 
-  <!-- beginner U -->
-  <section class="section02"></section>
+  <!-- juni -->
+  <section class="section02">
+    <div class="slider">
+      <div class="slide active">
+        <img src="/images/juni/1.jpg" alt="">
+        <div class="info">
+          <h2>Winter Mountains</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/images/juni/2.jpg" alt="">
+        <div class="info">
+          <h2>Tropical Desert</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/images/juni/3.jpg" alt="">
+        <div class="info">
+          <h2>Steaming Volcanoes</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/images/juni/4.jpg" alt="">
+        <div class="info">
+          <h2>Mountain River</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/images/juni/5.jpg" alt="">
+        <div class="info">
+          <h2>Egypt Pyramids</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <i class="fa fa-chevron-left prev-btn"></i>
+        <i class="fa fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Jun-ni -->
-  <section class="section04">
+  <!-- beginner U -->
+  <section class="section03"></section>
+
+  <!-- Juni -->
+  <section id="main_footer">
     <footer id="my_footer">
       <div id="main_travaux">
         <div id="top_foorter">
@@ -115,9 +172,6 @@
           <div class="box">
             <div class="wave lighitblue"></div>
           </div>
-          <div class="hilt">
-            <div class="handle"></div>
-          </div>
 
           <h2>Droplet</h2>
         </div>
@@ -125,16 +179,16 @@
     </footer>
   </section>
 
-  <script>
+  <script type="text/javascript">
     // wave #################### remove
     var wave = document.querySelector('.wave');
     var bottom = -170;
 
-    window.addEventListener('load', function(){
+    window.addEventListener('load', function () {
       move();
     });
 
-    function move(){
+    function move() {
       var id = setInterval(frame, 2000);
 
       function frame() {
@@ -147,6 +201,86 @@
         }
       }
     }
+
+    const slider = document.querySelector(".slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+    const slides = document.querySelectorAll(".slide");
+    const slideIcons = document.querySelectorAll(".slide-icon");
+    const numberOfSlides = slides.length;
+    var slideNumber = 0;
+
+    //image slider next button
+    nextBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber++;
+
+      if (slideNumber > (numberOfSlides - 1)) {
+        slideNumber = 0;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider previous button
+    prevBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber--;
+
+      if (slideNumber < 0) {
+        slideNumber = numberOfSlides - 1;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider autoplay
+    var playSlider;
+
+    var repeater = () => {
+      playSlider = setInterval(function () {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if (slideNumber > (numberOfSlides - 1)) {
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      }, 8000);
+    }
+    repeater();
+
+    //stop the image slider autoplay on mouseover
+    slider.addEventListener("mouseover", () => {
+      clearInterval(playSlider);
+    });
+
+    //start the image slider autoplay again on mouseout
+    slider.addEventListener("mouseout", () => {
+      repeater();
+    });
   </script>
 </body>
 
