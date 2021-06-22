@@ -49,6 +49,7 @@ header {
   background-color: #302e2f;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header-inner {
@@ -544,3 +545,4 @@ section:nth-child(4) {
 #bottom_foorter h2:hover {
   color: rgba(0, 0, 0, 0.1);
 }
+
