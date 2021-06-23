@@ -20,7 +20,7 @@
 
 
   <!--Seon-Young -->
-  <header>
+  <header id="main_header">
     <div class="header-inner">
       <div class="logo">
         <a href="/index.html"><img src="">Droplet</a>
@@ -75,58 +75,47 @@
 
 
   <!-- juni -->
-  <section class="section01">
+  <section id="main_section01">
     <div class="slider">
-      <div class="slide active">
-        <img src="/images/juni/1.jpg" alt="">
-        <div class="info">
-          <h2>Winter Mountains</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+
+        <div class="slide first">
+          <img src="/images/juni/1.jpg" alt="">
         </div>
-      </div>
-      <div class="slide">
-        <img src="/images/juni/2.jpg" alt="">
-        <div class="info">
-          <h2>Tropical Desert</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+        <div class="slide">
+          <img src="/images/juni/2.jpg" alt="">
         </div>
-      </div>
-      <div class="slide">
-        <img src="/images/juni/3.jpg" alt="">
-        <div class="info">
-          <h2>Steaming Volcanoes</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+        <div class="slide">
+          <img src="/images/juni/3.jpg" alt="">
         </div>
-      </div>
-      <div class="slide">
-        <img src="/images/juni/4.jpg" alt="">
-        <div class="info">
-          <h2>Mountain River</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+        <div class="slide">
+          <img src="/images/juni/4.jpg" alt="">
         </div>
-      </div>
-      <div class="slide">
-        <img src="/images/juni/5.jpg" alt="">
-        <div class="info">
-          <h2>Egypt Pyramids</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+        <div class="slide">
+          <img src="/images/juni/5.jpg" alt="">
         </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+
       </div>
-      <div class="navigation">
-        <i class="fa fa-chevron-left prev-btn"></i>
-        <i class="fa fa-chevron-right next-btn"></i>
-      </div>
-      <div class="navigation-visibility">
-        <div class="slide-icon active"></div>
-        <div class="slide-icon"></div>
-        <div class="slide-icon"></div>
-        <div class="slide-icon"></div>
-        <div class="slide-icon"></div>
+
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
       </div>
     </div>
   </section>
@@ -252,7 +241,8 @@
   </section>
 
   <script type="text/javascript">
-    // wave #################### remove
+
+    // wave event
     var wave = document.querySelector('.wave');
     var bottom = -170;
 
@@ -274,77 +264,17 @@
       }
     }
 
-    // 코드 공부중 #################### remove
-    const slider = document.querySelector(".slider");
-    const nextBtn = document.querySelector(".next-btn");
-    const prevBtn = document.querySelector(".prev-btn");
-    const slides = document.querySelectorAll(".slide");
-    const slideIcons = document.querySelectorAll(".slide-icon");
-    const numberOfSlides = slides.length;
-    var slideNumber = 0;
+    // scroll event navigation fixed
+    var nav = document.getElementsByClassName("header-inner");
 
-    //image slider next button
-    nextBtn.addEventListener("click", () => {
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
-      slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-      });
-
-      slideNumber++;
-
-      if (slideNumber > (numberOfSlides - 1)) {
-        slideNumber = 0;
+    window.onscroll = function sticky() {
+      if(window.pageYOffset > nav[0].offsetTop) {
+        nav[0].classList.add("nav");
+      } else {
+        nav[0].classList.remove("nav");
       }
-
-      slides[slideNumber].classList.add("active");
-      slideIcons[slideNumber].classList.add("active");
-    });
-
-    //image slider previous button
-    prevBtn.addEventListener("click", () => {
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
-      slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-      });
-
-      slideNumber--;
-
-      if (slideNumber < 0) {
-        slideNumber = numberOfSlides - 1;
-      }
-
-      slides[slideNumber].classList.add("active");
-      slideIcons[slideNumber].classList.add("active");
-    });
-
-    //image slider autoplay
-    var playSlider;
-
-    var repeater = () => {
-      playSlider = setInterval(function () {
-        slides.forEach((slide) => {
-          slide.classList.remove("active");
-        });
-        slideIcons.forEach((slideIcon) => {
-          slideIcon.classList.remove("active");
-        });
-
-        slideNumber++;
-
-        if (slideNumber > (numberOfSlides - 1)) {
-          slideNumber = 0;
-        }
-
-        slides[slideNumber].classList.add("active");
-        slideIcons[slideNumber].classList.add("active");
-      }, 5500);
     }
-    repeater();
-
+    
   </script>
 </body>
 

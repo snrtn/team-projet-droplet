@@ -1,4 +1,4 @@
-// hambuger icon event
+// hambuger icon event 
 $(function () {
   /* header - sidenav */
   $('.hambuger').click(function () {
@@ -20,6 +20,16 @@ window.addEventListener('scroll', () => {
   if (Math.ceil(scrolled) != scrollable) {
     var el = document.getElementById("test");
     el.style.opacity = '1'
-    el.style.transition = '1s';
+    el.style.transition = '2s';
   }
 });
+
+// image slide auto
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 5){
+    counter = 1;
+  }
+}, 5000);
