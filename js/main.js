@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
   if (Math.ceil(scrolled) === scrollable) {
     var el = document.getElementById("test");
     el.style.opacity = '0'
-    el.style.transition = '0.2s';
+    el.style.transition = '1s';
   }
   if (Math.ceil(scrolled) != scrollable) {
     var el = document.getElementById("test");
