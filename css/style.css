@@ -301,7 +301,6 @@ section {
   min-height: 700px;
   margin: 20px;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .slider .slide {
@@ -425,7 +424,8 @@ section {
 
 /* ########## section02 ########## */
 .section02 {
-  width: 100%;
+  width: var(--MainWidth);
+  /* width: 100%; */
   background: url(/images/moni/Olaf.jpg) no-repeat center center;
   background-size: cover;
 }
