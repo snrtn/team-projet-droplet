@@ -73,14 +73,22 @@ header {
   position: relative;
 }
 
-.logo a::after {
+/* .logo a:after {
   position: absolute;
   top: 100%;
   left: 0;
-  content: ': 작은 물방울';
+  content: attr(data-after);
   color: #ddd;
   font-size: 12px;
   padding-top: 3px;
+  opacity: 1;
+  transition: 0.5s;
+} */
+
+#test {
+  color: #fff;
+  margin-top: -1px;
+  font-size: 12px;
 }
 
 .logo img {}

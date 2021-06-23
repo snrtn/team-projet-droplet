@@ -19,6 +19,7 @@
     <div class="header-inner">
       <div class="logo">
         <a href="/index.html"><img src="">Droplet</a>
+        <p id="test">: 작은 물방울</p>
       </div>
       <nav>
         <ul class="gnb">
@@ -192,7 +193,7 @@
           <div class="TL_foorter">
             <ul>
               ABOUT
-              <li><a href="#none">Application</a></li>
+              <li><a href="#none" class="test">Application</a></li>
             </ul>
             <ul>
               OUR WEBSITES
@@ -335,15 +336,21 @@
     }
     repeater();
 
-    //stop the image slider autoplay on mouseover
-    // slider.addEventListener("mouseover", () => {
-    //   clearInterval(playSlider);
-    // });
+    window.addEventListener('scroll', () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = window.scrollY;
 
-    // //start the image slider autoplay again on mouseout
-    // slider.addEventListener("mouseout", () => {
-    //   repeater();
-    // });
+      if (Math.ceil(scrolled) === scrollable) {
+        var el = document.getElementById("test");
+        el.style.opacity = '0'
+        el.style.transition = '0.2s';
+      } 
+      if (Math.ceil(scrolled) != scrollable){
+        var el = document.getElementById("test");
+        el.style.opacity = '1'
+        el.style.transition = '1s';
+      }
+    });
   </script>
 </body>
 
