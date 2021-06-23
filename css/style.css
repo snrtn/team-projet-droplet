@@ -66,7 +66,7 @@ header {
 }
 
 /* logo design */
-.logo {}
+/* .logo {} */
 
 .logo a {
   font-size: 24px;
@@ -91,10 +91,10 @@ header {
   font-size: 12px;
 }
 
-.logo img {}
+/* .logo img {} */
 
 /* nav design */
-nav {}
+/* nav {} */
 
 .gnb {
   display: flex;
@@ -237,7 +237,7 @@ header.active .sidenav {
   margin-bottom: 80px;
 }
 
-.sidenav .logo img {}
+/* .sidenav .logo img {} */
 
 .sidenav ul {
   color: #fff;
@@ -468,7 +468,7 @@ button {
   animation-name: slid-up;
   animation-duration: 1s;
 }
-.content {}
+/* .content {} */
 .photo {
   /* border: 1px solid red; */
   display: inline-block;
