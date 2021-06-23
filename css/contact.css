@@ -81,10 +81,10 @@ header {
   font-size: 12px;
   padding-top: 3px;
 }
-.logo img {}
+/* .logo img {} */
 
 /* nav design */
-nav {}
+/* nav {} */
 .gnb {
   display: flex;
 }
