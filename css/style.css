@@ -533,7 +533,7 @@ button:hover {
 
 /* ########## section03 U ########## */
 
-.side {
+.u_side {
   margin: 2px;
   border: 2px solid green;
   width: 150px;
@@ -541,7 +541,7 @@ button:hover {
   padding: 2px;
   display: inline-block;
 }
-.pick {
+.u_pick {
   margin: 2px;
   border: 2px solid navy;
   width: 316px;
