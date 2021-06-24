@@ -24,8 +24,9 @@ $(document).ready(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 400) {
         $('.gallery').fadeIn(1000);
-      } else {
-        $('.gallery').fadeoOut(1000);
+      } 
+      if ($(this).scrollTop() < 300){
+        $('.gallery').fadeOut(1000);
       }
     });
   });
