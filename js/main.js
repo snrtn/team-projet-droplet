@@ -26,10 +26,23 @@ window.addEventListener('scroll', () => {
 
 // image slide auto
 var counter = 1;
-setInterval(function(){
+setInterval(function () {
   document.getElementById('radio' + counter).checked = true;
   counter++;
-  if(counter > 5){
+  if (counter > 5) {
     counter = 1;
   }
 }, 5000);
+
+$(document).ready(function () {
+  $(".gallery").hide();
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 500) {
+        $('.gallery').fadeIn(1000);
+      } else {
+        $('.gallery').fadeoOut(1000);
+      }
+    });
+  });
+});
