@@ -533,6 +533,10 @@ button:hover {
 
 /* ########## section03 U ########## */
 
+.u_test {
+  margin: 5px;
+}
+
 .u_side {
   margin: 1px 1px 1px 5px;
   border: 2px solid green;
@@ -545,6 +549,7 @@ button:hover {
 .u_pick {
   margin: 1px 5px 1px 3px;
   border: 2px solid navy;
+  border-radius: 10px;
   width: 312px;
   height: 620px;
   padding: 2px;
