@@ -533,8 +533,17 @@ button:hover {
 
 /* ########## section03 U ########## */
 
-.u_test {
+.section03 {
+  width: var(--MainWidth);
+  /* width: 100%; */
+  background: url(/images/moni/Olaf.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.u_text {
   margin: 5px;
+  padding: 5px;
+  color: white;
 }
 
 .u_side {
