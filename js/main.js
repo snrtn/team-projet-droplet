@@ -34,6 +34,7 @@ setInterval(function () {
   }
 }, 5000);
 
+// section02 part slide down
 $(document).ready(function () {
   $(".gallery").hide();
   $(function () {
