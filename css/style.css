@@ -398,18 +398,10 @@ header.active .sidenav {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #fff;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #fff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #fff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #fff;
-}
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4,
 #radio5:checked ~ .navigation-auto .auto-btn5{
   background: #fff;
 }
@@ -425,10 +417,9 @@ header.active .sidenav {
 }
 
 .wrapper {
-  height: 88%;
+  height: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .gallery {
@@ -447,7 +438,6 @@ h1 {
 p {
   color: #fff;
   font-size: 13px;
-  /* line-height: 15px; */
 }
 
 button {
@@ -458,7 +448,7 @@ button {
   font-size: 14px;
   padding: 7px 0;
   border-radius: 20px;
-  border: none;
+  border: transparent;
   margin-top: 20px;
   cursor: pointer;
   position: relative;
@@ -469,8 +459,8 @@ button {
 }
 
 .content {
-  width: 950px;
-  height: 750px;
+  /* width: 950px;
+  height: 750px; */
   position: absolute;
   left: 45%;
 
