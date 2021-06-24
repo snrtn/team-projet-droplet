@@ -7,6 +7,31 @@ $(function () {
   });
 });
 
+// image slide auto
+var counter = 1;
+setInterval(function () {
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if (counter > 5) {
+    counter = 1;
+  }
+}, 5000);
+
+// section02 part slide down
+$(document).ready(function () {
+  $(".gallery").hide();
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 400) {
+        $('.gallery').fadeIn(1000);
+      } 
+      if ($(this).scrollTop() < 300){
+        $('.gallery').fadeOut(1000);
+      }
+    });
+  });
+});
+
 // subname scroll event
 window.addEventListener('scroll', () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -22,27 +47,4 @@ window.addEventListener('scroll', () => {
     el.style.opacity = '1'
     el.style.transition = '2s';
   }
-});
-
-// image slide auto
-var counter = 1;
-setInterval(function () {
-  document.getElementById('radio' + counter).checked = true;
-  counter++;
-  if (counter > 5) {
-    counter = 1;
-  }
-}, 5000);
-
-$(document).ready(function () {
-  $(".gallery").hide();
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 500) {
-        $('.gallery').fadeIn(1000);
-      } else {
-        $('.gallery').fadeoOut(1000);
-      }
-    });
-  });
 });
