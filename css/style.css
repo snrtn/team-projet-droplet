@@ -526,6 +526,43 @@ button:hover {
   }
 }
 
+/* ########## section03 U ########## */
+
+.section03 {
+  width: var(--MainWidth);
+  /* width: 100%; */
+  background: url(/images/u/night.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.u_text {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.u_con {
+  text-align: center;
+}
+
+.u_side {
+  margin: 1px 1px 1px 5px;
+  border: 2px solid green;
+  width: 150px;
+  height: 620px;
+  padding: 2px;
+  display: inline-block;
+}
+
+.u_pick {
+  margin: 1px 5px 1px 3px;
+  border: 2px solid navy;
+  border-radius: 10px;
+  width: 270px;
+  height: 620px;
+  padding: 2px;
+  display: inline-block;
+}
 
 /* ########## footer ########## */
 
