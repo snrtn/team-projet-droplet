@@ -459,13 +459,8 @@ button {
 }
 
 .content {
-<<<<<<< HEAD
-  /* width: 950px;
-  height: 750px; */
-=======
   width: 750px;
   height: 750px;
->>>>>>> d217efce126f77716b64f9a3438225a3a7f08318
   position: absolute;
   left: 45%;
 
