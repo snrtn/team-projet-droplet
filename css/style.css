@@ -541,9 +541,10 @@ button:hover {
 }
 
 .u_text {
-  margin: 5px;
+  margin: 30px 30px 10px 30px;
   padding: 5px;
   color: white;
+  text-shadow: 3px 3px 3px 3px gray;
 }
 
 .u_con {
@@ -554,9 +555,11 @@ button:hover {
   margin: 1px 1px 1px 5px;
   border: 2px solid green;
   width: 150px;
-  height: 620px;
+  height: 400px;
   padding: 2px;
   display: inline-block;
+  color: white;
+  bottom: 50px;
 }
 
 .u_pick {
@@ -564,9 +567,10 @@ button:hover {
   border: 2px solid navy;
   border-radius: 10px;
   width: 270px;
-  height: 620px;
+  height: 400px;
   padding: 2px;
   display: inline-block;
+  bottom: 50px;
 }
 
 /* ########## footer ########## */
