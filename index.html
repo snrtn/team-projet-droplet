@@ -49,9 +49,9 @@
             <li>
               <a href="#none">FAQ</a>
               <ul class="menu">
-                <li><a href="/html/contact.html">Contact us</a></li>
+                <li><a href="#">Contact us</a></li>
                 <li>
-                  <a href="/html/feedback.html">Give us your feedback!</a>
+                  <a href="#">Give us your feedback!</a>
                 </li>
               </ul>
             </li>
@@ -72,9 +72,9 @@
         </div>
         <ul>
           <li><a href="#none">About</a></li>
-          <li><a href="/html/expo.html">NOW</a></li>
+          <li><a href="#">NOW</a></li>
           <li><a href="#none">EXPLORER</a></li>
-          <li><a href="/html/contact.html">FAQ</a></li>
+          <li><a href="#none">FAQ</a></li>
         </ul>
       </div>
     </header>
@@ -191,23 +191,16 @@
             <div class="TL_foorter">
               <ul>
                 ABOUT
-                <li><a href="#none" class="test">Application</a></li>
+                <li><a href="#none" class="test">About us</a></li>
               </ul>
               <ul>
-                OUR WEBSITES
-                <li><a href="#none">Online ticketing service</a></li>
-                <li><a href="#none">Online Boutique</a></li>
-                <li><a href="#none">Collection</a></li>
-                <li><a href="#none">Editions</a></li>
-                <li><a href="#none">Donating online</a></li>
-                <li><a href="#none">Petite Galerie</a></li>
+                EXPLORER
+                <li><a href="#none">Arts</a></li>
               </ul>
               <ul>
                 FAQ
                 <li><a href="#none">Contact us</a></li>
                 <li><a href="#none">Give us your feedback!</a></li>
-                <li><a href="#none">Jobs (in French)</a></li>
-                <li><a href="#none">Private event and film shoots</a></li>
               </ul>
               <hr />
             </div>
@@ -222,57 +215,9 @@
               </div>
             </div>
           </div>
-
-          <div id="bottom_foorter">
-            <div class="drops lighitblue"></div>
-            <div class="drops lighitblue"></div>
-            <div class="drops lighitblue"></div>
-            <div class="drops lighitblue"></div>
-            <div class="drops lighitblue"></div>
-
-            <div class="box">
-              <div class="wave lighitblue"></div>
-            </div>
-
-            <h2>작은 물방울이 모여 큰 바다가 되고...</h2>
-          </div>
-        </div>
       </footer>
     </section>
 
-    <script type="text/javascript">
-      // wave event
-      var wave = document.querySelector(".wave");
-      var bottom = -170;
-
-      window.addEventListener("load", function () {
-        move();
-      });
-
-      function move() {
-        var id = setInterval(frame, 2000);
-
-        function frame() {
-          if (bottom >= -120) {
-            wave.style.bottom = bottom + "%";
-            bottom = bottom - 25;
-          } else {
-            wave.style.bottom = bottom + "%";
-            bottom = bottom - -25;
-          }
-        }
-      }
-
-      // scroll event navigation fixed
-      var nav = document.getElementsByClassName("header-inner");
-
-      window.onscroll = function sticky() {
-        if (window.pageYOffset > nav[0].offsetTop) {
-          nav[0].classList.add("nav");
-        } else {
-          nav[0].classList.remove("nav");
-        }
-      };
-    </script>
+    <script type="text/javascript"></script>
   </body>
 </html>
