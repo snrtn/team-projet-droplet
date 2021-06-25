@@ -17,7 +17,7 @@ setInterval(function () {
   }
 }, 5000);
 
-// section02 part slide down
+// slide down
 $(document).ready(function () {
   $(".gallery").hide();
   $(function () {
@@ -30,21 +30,4 @@ $(document).ready(function () {
       }
     });
   });
-});
-
-// subname scroll event
-window.addEventListener('scroll', () => {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const scrolled = window.scrollY;
-
-  if (Math.ceil(scrolled) === scrollable) {
-    var el = document.getElementById("test");
-    el.style.opacity = '0'
-    el.style.transition = '1s';
-  }
-  if (Math.ceil(scrolled) != scrollable) {
-    var el = document.getElementById("test");
-    el.style.opacity = '1'
-    el.style.transition = '2s';
-  }
 });

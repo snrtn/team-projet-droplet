@@ -64,7 +64,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50PX;
+
   
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ section {
   position: absolute;
 
   width: 100%;
-  height: 500px;
+  height: 210px;
 
   margin-bottom: 0;
 
@@ -161,7 +161,7 @@ header {
 
 .menu {
   display: none;
-  margin-top: 38px;
+  margin-top: 18px;
   position: relative;
 }
 
@@ -189,6 +189,7 @@ header {
 
 .menu li:hover {
   background-color: #d99578;
+  border-bottom: 1px solid transparent;
 }
 
 .menu li:hover a {
@@ -228,7 +229,6 @@ header {
   border-radius: 2px;
   margin-top: 2px;
   transition: 0.5s;
-  ;
 }
 
 .hambuger span:nth-child(1) {
@@ -255,15 +255,6 @@ header {
 .hambuger.active span:nth-child(3) {
   top: 50%;
   transform: rotate(-45deg);
-}
-
-.nav{
-  position: fixed;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0px 50px;
-  height: 50px;
-  background: #302e2f;
 }
 
 /* sidenav */
@@ -459,13 +450,8 @@ button {
 }
 
 .content {
-<<<<<<< HEAD
-  /* width: 950px;
-  height: 750px; */
-=======
   width: 750px;
   height: 750px;
->>>>>>> d217efce126f77716b64f9a3438225a3a7f08318
   position: absolute;
   left: 45%;
 
@@ -577,7 +563,7 @@ button:hover {
 
 #my_footer {
   width: 100%;
-  height: 500px;
+  height: inherit;
 
   overflow: hidden;
   margin: 0;
@@ -594,7 +580,7 @@ button:hover {
 
 #top_foorter {
   width: var(--MainWidth);
-  height: 300px;
+  height: 100%;
 
   display: flex;
 
@@ -603,7 +589,7 @@ button:hover {
 
 .TL_foorter {
   width: 1000px;
-  height: 400px;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
 
   padding: 5px 0px;
@@ -616,7 +602,7 @@ button:hover {
   font-size: 20px;
   display: inline-table;
   width: 300px;
-  height: 325px;
+  height: 100%;
 
   padding: 50px 10px 45px 50px;
 
@@ -673,7 +659,7 @@ button:hover {
 
 .TR_foorter {
   width: 600px;
-  height: 400px;
+  height: 100%;
   background-color: rgba(238, 238, 238, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -759,120 +745,4 @@ button:hover {
 .sns a:hover .fa {
   transform: rotateY(360deg);
   color: #fff;
-}
-
-#bottom_foorter {
-  width: var(--MainWidth);
-  height: 400px;
-  margin-top: 60px;
-
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-}
-
-.box {
-  width: 70px;
-  height: 75px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0.3em;
-  position: relative;
-  margin: 100px 600px;
-  overflow: hidden;
-  box-shadow: 2px 0 40px rgba(0, 0, 0, 0.5);
-  transform: scale(2);
-}
-
-.wave {
-  width: 150px;
-  height: 150px;
-  left: -50%;
-  bottom: -190%;
-  position: absolute;
-  border-radius: 33%;
-  transition: all 1.4s linear;
-  animation: waves 2.4s linear infinite;
-}
-
-.lighitblue {
-  background: linear-gradient(to right, #f4f5e5, #4ea2e7);
-}
-
-@keyframes waves {
-  0% {
-    transform: rotate(0);
-    border-radius: 30%;
-    /* bottom: -170px; */
-  }
-
-  45% {
-    border-radius: 39%;
-  }
-
-  100% {
-    transform: rotate(360deg);
-    border-radius: 30%;
-    /* bottom: -80px; */
-  }
-}
-
-.drops {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: 0;
-  left: 720px;
-  border-radius: 1em;
-  border-top-right-radius: 0.2em;
-  animation: drops 2s linear infinite;
-}
-
-.drops:nth-child(2) {
-  left: 660px;
-  animation-delay: 0.6s;
-}
-
-.drops:nth-child(3) {
-  left: 680px;
-  animation-delay: 1.2s;
-}
-
-.drops:nth-child(4) {
-  left: 710px;
-  animation-delay: 1.6s;
-}
-
-.drops:nth-child(5) {
-  left: 670px;
-  animation-delay: 0.5s;
-}
-
-@keyframes drops {
-  0% {
-    opacity: 0.2;
-    transform: translateY(0) rotate(-40deg);
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(200px) rotate(-40deg);
-  }
-}
-
-#bottom_foorter h2 {
-  position: absolute;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: normal;
-  font-style: italic;
-  margin-left: 370px;
-  margin-top: 10px;
-  cursor: cell;
-}
-
-#bottom_foorter h2:hover {
-  color: rgba(0, 0, 0, 0.1);
 }
