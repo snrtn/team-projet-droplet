@@ -514,42 +514,54 @@ button:hover {
 .section03 {
   width: var(--MainWidth);
   /* width: 100%; */
-  background: url(/images/u/night.jpg) no-repeat center center;
+  background: url(/images/u/nite.jpg) no-repeat center center;
   background-size: cover;
   /* text-align: center; */
 }
 
-.u_text {
-  margin: 30px 30px 10px 30px;
+.u_text1 {
+  font-size: 2.3em;
+  margin: 50px 20px 20px 20px;
   padding: 5px;
   color: white;
-  text-shadow: 3px 3px 3px 3px gray;
+  /* text-shadow: 5px 5px 5px yellowgreen; */
+  text-align: center;
+}
+
+.u_text2 {
+  font-size: 1.3em;
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  color: rgb(223, 223, 223);
+  /* text-shadow: 5px 5px 5px yellowgreen; */
+  text-align: center;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 65vh;
+  height: 70vh;
 }
 
 .icon {
   /* border: 1px solid white; */
-  width: 240px;
-  height: 240px;
+  width: 320px;
+  height: 320px;
   margin: 10px;
   position: relative;
 }
 
 .icon span {
   position: absolute;
-  background-color: white;
-  color: black;
+  /* border: 1px solid orange; */
+  background-color: #a9b3a8a8;
+  color: white;
   width: 400px;
   text-align: center;
-  top: -100%;
+  top: -20%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   left: 50%;
   transform: translateX(-50%);
   /* display: none; */
@@ -561,11 +573,11 @@ button:hover {
 .icon span:after {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: #caccb5;
   width: 10px;
   height: 10px;
   transform: rotate(45deg) translateX(-50%);
-  bottom: -5px; /* height의 50%로 설정 */
+  bottom: -10px;
   left: 50%;
 }
 
