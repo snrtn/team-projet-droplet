@@ -1,16 +1,15 @@
-
 @charset "utf-8";
 
 /* ########## Google Web Fonts CDN ########## */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
 
 /* ########## Fontawesome 4.7 ########## */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* ########## Defalt CSS ########## */
 
 * {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* ########## Reset CSS ########## */
@@ -52,9 +51,9 @@ body {
 section {
   width: var(--MainWidth);
   height: 750px;
-  
+
   margin: 0 auto 20px auto;
-  
+
   border: 1px solid #000;
 }
 
@@ -65,14 +64,13 @@ section {
   justify-content: center;
   align-items: center;
 
-  
   margin: 0;
   padding: 0;
-  
+
   border: none;
-  
+
   box-sizing: border-box;
-  
+
   background: linear-gradient(to top, #302e2f09, #302e2f);
 }
 
@@ -87,7 +85,6 @@ section {
 
   border: none;
 }
-
 
 /* ########## header ########## */
 
@@ -151,7 +148,7 @@ header {
   position: relative;
 }
 
-.gnb li:hover>a {
+.gnb li:hover > a {
   color: #d99578;
 }
 
@@ -166,7 +163,7 @@ header {
 }
 
 .menu::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   left: 20px;
@@ -212,7 +209,6 @@ header {
   color: #ddd;
   font-size: 21px;
   margin: 0 10px 0 20px;
-
 }
 
 .hambuger {
@@ -279,7 +275,6 @@ header.active .sidenav {
   margin-bottom: 80px;
 }
 
-
 .sidenav ul {
   color: #fff;
   padding: 20px 10px 10px 30px;
@@ -315,7 +310,7 @@ header.active .sidenav {
   display: flex;
 }
 
-.slides input{
+.slides input {
   display: none;
 }
 
@@ -335,10 +330,9 @@ header.active .sidenav {
   margin-top: -40px;
   display: flex;
   justify-content: center;
-
 }
 
-.manual-btn{
+.manual-btn {
   border: 2px solid #fff;
   padding: 5px;
   border-radius: 10px;
@@ -346,11 +340,11 @@ header.active .sidenav {
   transition: 2s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
   background: #fff;
 }
 
@@ -385,7 +379,7 @@ header.active .sidenav {
   transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -393,10 +387,9 @@ header.active .sidenav {
 #radio2:checked ~ .navigation-auto .auto-btn2,
 #radio3:checked ~ .navigation-auto .auto-btn3,
 #radio4:checked ~ .navigation-auto .auto-btn4,
-#radio5:checked ~ .navigation-auto .auto-btn5{
+#radio5:checked ~ .navigation-auto .auto-btn5 {
   background: #fff;
 }
-
 
 /* ########## section02 ########## */
 
@@ -454,7 +447,6 @@ button {
   height: 750px;
   position: absolute;
   left: 45%;
-
 }
 
 .photo {
@@ -487,7 +479,7 @@ h4 {
 }
 
 button::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 100%;
@@ -545,7 +537,6 @@ button:hover {
   padding: 2px;
   display: inline-block;
   color: white;
-  bottom: 50px;
 }
 
 .u_pick {
@@ -556,7 +547,6 @@ button:hover {
   height: 400px;
   padding: 2px;
   display: inline-block;
-  bottom: 50px;
 }
 
 /* ########## footer ########## */
@@ -630,7 +620,7 @@ button:hover {
 }
 
 .TL_foorter li a:before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   height: 2px;
@@ -673,7 +663,7 @@ button:hover {
 }
 
 .or-text:after {
-  content: '';
+  content: "";
   background-color: rgba(51, 51, 51, 0.3);
   height: 1px;
   margin-left: 20px;
@@ -703,7 +693,7 @@ button:hover {
 }
 
 .sns a:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0;
@@ -730,7 +720,7 @@ button:hover {
 }
 
 .sns a:nth-child(4):before {
-  background-color: #0077B5;
+  background-color: #0077b5;
 }
 
 .sns a:nth-child(5):before {
