@@ -13,21 +13,8 @@ $(document).ready(function () {
   $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 10){
-        $('.test').fadeIn(1000);
-        $('.test').css('background-color','#fff');
-        $('.logo a').css('color','#000');
-        $('.gnb a').css('color','#000');
-        $('.menu a').css('color','#000');
-        $('.side_box i').css('color','#000');
-      }
-      if ($(this).scrollTop() < 9){
-        $('.test').fadeIn(1000);
-        $('.test').css('background-color','#333');
-        $('.logo a').css('color','#fff');
-        $('.gnb a').css('color','#fff');
-        $('.menu a').css('color','#000');
-        $('.side_box i').css('color','#fff');
-        $('.test').removeAttr('a');
+        $('.test').fadeIn();
+        $('.test').css('background-color','rgba(51, 51, 51, 0.7)');
       }
     });
   });
