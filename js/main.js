@@ -22,7 +22,7 @@ $(document).ready(function () {
   $(".gallery").hide();
   $(function () {
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 400) {
+      if ($(this).scrollTop() > 300) {
         $('.gallery').fadeIn(1000);
       } 
       if ($(this).scrollTop() < 300){
