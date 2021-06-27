@@ -8,6 +8,7 @@ $(function () {
 });
 
 // Header, Navbar SlideDown, Line 23
+// I'm fix it.
 $(document).ready(function () {
   $(function () {
     $(window).scroll(function () {
