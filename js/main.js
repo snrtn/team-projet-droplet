@@ -15,6 +15,11 @@ $(document).ready(function () {
       if ($(this).scrollTop() > 10){
         $('.test').fadeIn();
         $('.test').css('background-color','rgba(51, 51, 51, 0.7)');
+        $('#test').css('color','transparent');
+      }
+      if ($(this).scrollTop() < 10){
+        $('#test').css('color','#fff');
+        $('#test').css('transition','0.5s');
       }
     });
   });
