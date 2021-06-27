@@ -407,7 +407,7 @@ header.active .sidenav {
 }
 
 .gallery {
-  flex-basis: 60%;
+  /* flex-basis: 60%; */
   margin-left: 50px;
   z-index: 1;
   /* animation-name: slid-up;
@@ -426,26 +426,27 @@ p {
 
 button {
   width: 150px;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #000;
   background: #fff;
   font-size: 14px;
   padding: 7px 0;
   border-radius: 20px;
-  border: transparent;
+  border: none;
   margin-top: 20px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  animation-name: slid-up;
+  animation: slid-up;
   animation-duration: 1s;
 }
 
 .content {
-  width: 750px;
-  height: 750px;
-  position: absolute;
+  width: 730px;
+  height: 730px;
+  /* border: 1px solid red; */
+  position: absolute; 
   left: 45%;
 }
 
@@ -453,7 +454,7 @@ button {
   /* border: 1px solid red; */
   display: inline-block;
   text-align: center;
-  /* line-height: 10px; */
+  line-height: 10px;
   border-radius: 10px;
   padding: 20px;
   padding-top: 50px;
