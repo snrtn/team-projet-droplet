@@ -21,7 +21,7 @@
 
 body {
   -ms-overflow-style: none;
-  background-color: rgb(223, 223, 223);
+  background-color: var(--WhiteColor);
 }
 
 ::-webkit-scrollbar {
@@ -40,21 +40,31 @@ a {
   color: #eee;
 }
 
+#container {
+  margin: 0%;
+  padding: 0%;
+}
+
+section {
+  height: 600px;
+  margin-bottom: 10px;
+}
+
 /* ########################################*/ 
 /* ########## VAR() ########## */
 /* ########################################*/ 
 
 :root {
   /* NAVBAR & FOOTER */
-  --MainWidth: 1130px;
+  --MainWidth: 1100px;
   --FullWidth: 100%;
   --MdWidth: 50%;
 
   /* COLOR */
   --DeepBlackColor: #000000;
   --BlackColor: #333333;
-  --WhiteColor: #ffffff;
   --DeepWhiteColor: #eeeeee;
+  --WhiteColor: #ffffff;
   --OrangeColor: #d99578;
 
   /* FONTSIZE */
@@ -65,25 +75,6 @@ a {
 }
 
 /* ########################################*/ 
-/* ########## WINDOW SIZE ########## */
-/* ########################################*/ 
-
-#container {
-  margin: 0%;
-  padding: 0%;
-}
-
-
-section {
-  width: 100%;
-  height: 600px;
-  
-  margin: 0 auto 20px auto;
-  
-  border: 1px solid #fff;
-}
-
-/* ########################################*/ 
 /* ########## HEADER ########## */
 /* ########################################*/ 
 
@@ -91,12 +82,12 @@ header {
   background-color: #333333;
   position: fixed;
   width: 100%;
-  height: 30px;
+  height: 40px;
   z-index: 100;
 }
 
 .header-inner {
-  width: 1100px;
+  width: var(--MainWidth);
   height: 30px;
   margin: auto;
   padding: 0;
@@ -109,7 +100,7 @@ header {
 /* logo design  */
 
 .logo a {
-  font-size: 15px;
+  font-size: var(--MdFontSize);
   position: relative;
 }
 
@@ -127,9 +118,11 @@ header {
 }
 
 .gnb li {
+  font-size: var(--SmFontSize);
   width: 150px;
   padding: 10px;
   text-align: center;
+  line-height: 20px;
 }
 
 .gnb li a {
@@ -184,7 +177,7 @@ header {
 /* side_box*/
 .side_box {
   width: 100px;
-  padding: 12px 10px;
+  line-height: 15px;
 }
 
 .search,
@@ -196,7 +189,7 @@ header {
 .search {
   color: #ddd;
   font-size: 15px;
-  margin: 0 10px 0 20px;
+  margin: 10px
 }
 
 .hambuger {
@@ -288,7 +281,11 @@ header.active .sidenav {
 /* ########## SECTION01 ########## */
 /* ########################################*/ 
 
-
+.section01 {
+  width: 100%;
+  background-color: var(--OrangeColor);
+  padding-top: 30px;
+}
 
 /* ########################################*/ 
 /* ########## SECTION02 ########## */
@@ -408,7 +405,7 @@ button:hover {
 
 .u_text1 {
   font-size: 2.3em;
-  margin: 50px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
   padding: 5px;
   color: white;
   /* text-shadow: 5px 5px 5px yellowgreen; */
@@ -602,6 +599,19 @@ button:hover {
 /* ########################################*/ 
 
 footer {
+  width: var(--FullWidth);
+  height: 400px;
+
+  background-color: var(--WhiteColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_footer {
   width: var(--MainWidth);
   height: 400px;
+
+  background-color: var(--WhiteColor);
 }
