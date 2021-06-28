@@ -1,19 +1,19 @@
 @charset "utf-8";
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## Google Web Fonts CDN ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
-/* ########################################*/ 
+/* ########################################*/
 /* ########## Fontawesome 4.7 ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## DEFALT CCC ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 * {
   font-family: "Noto Sans KR", sans-serif;
@@ -50,11 +50,11 @@ section {
   margin-bottom: 10px;
 }
 
-/* ########################################*/ 
-/* ########################################*/ 
+/* ########################################*/
+/* ########################################*/
 /* ########## VAR() ########## */
 /* ########################################*/
-/* ########################################*/ 
+/* ########################################*/
 
 :root {
   /* NAVBAR & FOOTER */
@@ -77,16 +77,16 @@ section {
   --BBgFontSize: 100px;
 }
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## HEADER ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 header {
   background-color: var(--BlackColor);
   display: flex;
   width: 100%;
   height: 40px;
-  z-index: 100; 
+  z-index: 100;
 }
 
 .logo img {
@@ -207,7 +207,7 @@ header {
 .search {
   color: #ddd;
   font-size: 15px;
-  margin: 10px
+  margin: 10px;
 }
 
 .hambuger {
@@ -295,9 +295,9 @@ header.active .sidenav {
   color: #d99578;
 }
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## SECTION01 ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 .section01 {
   margin-top: 10px;
@@ -306,11 +306,10 @@ header.active .sidenav {
 }
 
 .section01 div {
-
   width: var(--FullWidth);
   height: var(--MainHeight);
 
-  background-image: url('/images/juni/pauline.jpg');
+  background-image: url("/images/juni/pauline.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -325,7 +324,6 @@ header.active .sidenav {
 
   font-size: var(--MdFontSize);
 
-  
   text-align: center;
 }
 
@@ -339,9 +337,9 @@ header.active .sidenav {
   font-size: 18px;
 }
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## SECTION02 ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 .section02 {
   width: 100%;
@@ -391,7 +389,7 @@ button {
   width: 730px;
   height: 730px;
   /* border: 1px solid red; */
-  position: absolute; 
+  position: absolute;
   left: 45%;
 }
 
@@ -444,9 +442,9 @@ button:hover {
   color: #fff;
 }
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## SECTION03 ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 .section03 {
   width: 100%;
@@ -477,14 +475,16 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 50vh;
 }
 
 .icon {
-  /* border: 1px solid white; */
-  width: 320px;
-  height: 320px;
-  margin: 10px;
+  border: 1px solid white;
+  width: 200px;
+  height: 200px;
+  /* max-width: 100px; */
+  /* max-height: 100px; */
+  margin: 20px;
   position: relative;
 }
 
@@ -523,15 +523,19 @@ button:hover {
   visibility: visible;
 }
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## SECTION04 ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 .section04 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.8102591378348214) 96%);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 0.8102591378348214) 96%
+  );
 }
 
 .title-box {
@@ -570,7 +574,7 @@ button:hover {
   transition: 1s;
 }
 
-.img-box:hover{
+.img-box:hover {
   background-position: bottom right;
 }
 
@@ -636,19 +640,19 @@ button:hover {
 }
 
 @keyframes animate {
-  0%{
+  0% {
     transform: translateY(0) rotate(80deg);
     opacity: 1;
   }
-  100%{
+  100% {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
   }
 }
 
-/* ########################################*/ 
+/* ########################################*/
 /* ########## footer ########## */
-/* ########################################*/ 
+/* ########################################*/
 
 footer {
   width: var(--FullWidth);
