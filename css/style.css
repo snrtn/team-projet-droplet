@@ -89,6 +89,12 @@ header {
   z-index: 100; 
 }
 
+.logo img {
+  width: 25px;
+  height: 23px;
+  padding-right: 2px;
+}
+
 .test {
   position: fixed;
   width: 100%;
