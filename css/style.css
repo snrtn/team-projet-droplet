@@ -447,27 +447,26 @@ button:hover {
 /* ########################################*/
 
 .section03 {
-  width: 100%;
+  /* width: 100%; */
+  width: var(--FullWidth);
+  height: var(--MainHeight);
   background: url(/images/u/nite.jpg) no-repeat center center;
   background-size: cover;
-  /* text-align: center; */
 }
 
 .u_text1 {
   font-size: 2.3em;
-  margin: 0px 20px 20px 20px;
-  padding: 5px;
+  /* margin: 0px 20px 20px 20px; */
+  padding: 65px 10px 10px 10px;
   color: white;
-  /* text-shadow: 5px 5px 5px yellowgreen; */
   text-align: center;
 }
 
 .u_text2 {
   font-size: 1.3em;
-  margin: 10px 10px 10px 10px;
-  padding: 5px;
+  /* margin: 10px 10px 10px 10px; */
+  padding: 20px;
   color: rgb(223, 223, 223);
-  /* text-shadow: 5px 5px 5px yellowgreen; */
   text-align: center;
 }
 
@@ -475,15 +474,13 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 37vh;
 }
 
 .icon {
-  border: 1px solid white;
-  width: 200px;
-  height: 200px;
-  /* max-width: 100px; */
-  /* max-height: 100px; */
+  /* border: 1px solid white; */
+  width: 160px;
+  height: 160px;
   margin: 20px;
   position: relative;
 }
@@ -493,16 +490,16 @@ button:hover {
   /* border: 1px solid orange; */
   background-color: #a9b3a8a8;
   color: white;
-  width: 400px;
+  width: 320px;
   text-align: center;
-  top: -20%;
+  top: -35%;
   padding: 10px;
   border-radius: 5px;
   left: 50%;
   transform: translateX(-50%);
   /* display: none; */
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.2s;
   visibility: hidden;
 }
 
@@ -515,6 +512,11 @@ button:hover {
   transform: rotate(45deg) translateX(-50%);
   bottom: -10px;
   left: 50%;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .icon:hover span {
