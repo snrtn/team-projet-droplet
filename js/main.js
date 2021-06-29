@@ -12,14 +12,14 @@ $(function () {
 $(document).ready(function () {
   $(function () {
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 10){
+      if ($(this).scrollTop() > 10) {
         $('.test').fadeIn();
-        $('.test').css('background-color','rgba(51, 51, 51, 0.7)');
-        $('#test').css('color','transparent');
+        $('.test').css('background-color', 'rgba(51, 51, 51, 0.7)');
+        $('#test').css('color', 'transparent');
       }
-      if ($(this).scrollTop() < 10){
-        $('#test').css('color','#fff');
-        $('#test').css('transition','0.5s');
+      if ($(this).scrollTop() < 10) {
+        $('#test').css('color', '#fff');
+        $('#test').css('transition', '0.5s');
       }
     });
   });
@@ -32,8 +32,8 @@ $(document).ready(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 300) {
         $('.gallery').fadeIn(1000);
-      } 
-      if ($(this).scrollTop() < 300){
+      }
+      if ($(this).scrollTop() < 300) {
         $('.gallery').fadeOut(1000);
       }
     });
