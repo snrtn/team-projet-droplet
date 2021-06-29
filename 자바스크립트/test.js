@@ -1,1 +1,0 @@
-document.write("JS파일 위치에서 출력<br>");
