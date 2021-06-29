@@ -708,9 +708,9 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
 
 footer {
   width: var(--FullWidth);
-  height: 400px;
+  height: 200px;
 
-  background-color: var(--WhiteColor);
+  background-color: var(--BlackColor);
 
   display: flex;
   justify-content: center;
@@ -719,7 +719,53 @@ footer {
 
 .box_footer {
   width: var(--MainWidth);
-  height: 400px;
+  height: 100px;
 
-  background-color: var(--WhiteColor);
+  background-color: var(--BlackColor);
+}
+
+.box_footer ul{
+  display: inline-table;
+
+  width: 100px;
+
+  margin: 10px;
+
+  padding-right: 70px;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  color: var(--WhiteColor);
+}
+
+.box_footer a {
+  color: var(--WhiteColor);
+  transition: 0.5s;
+
+  font-size: var(--SmFontSize);
+
+  display: inline-block;
+
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.box_footer a:hover {
+  color: var(--OrangeColor);
+}
+
+.box_footer span {
+  display: inline-table;
+
+  color: var(--WhiteColor);
+
+  line-height: 30px;
+
+  margin-left: 15px;
+
+  font-size: var(--SmFontSize);
 }
