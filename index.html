@@ -208,12 +208,10 @@
       <a href="#none">안드로이드 바로가기 <</a>
       <a href="#none">아이폰 바로가기 <</a>
     </h3>
-    <div class="container06">
-      <div class="container">
-        <div class="card">
-          <div class="sneaker">
-            <img src="./images/juni/LaJoconde .png" alt="">
-          </div>
+    <div class="container">
+      <div class="card">
+        <div class="sneaker">
+          <img src="./images/juni/LaJoconde .png" alt="">
         </div>
       </div>
     </div>
@@ -255,16 +253,17 @@
 
     //Moving Animation Event
     container.addEventListener("mousemove", (e) => {
-      let xAxis = (window.innerWidth / 2 - e.pageX) / 50;
-      let yAxis = (window.innerHeight / 2 - e.pageY) / 150;
-      card.style.transform = `rotateX(${xAxis}deg) rotateY(${yAxis}deg)`;
+      
+      let xAxis = (window.innerWidth / 2 - e.screenX) / 100;
+      let yAxis = (window.innerHeight / 2 - e.screenY) / 100;
+      card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     });
 
     //Animate In
     container.addEventListener("mouseenter", (e) => {
       card.style.transition = "none";
       //Popout
-      sneaker.style.transform = "translateZ(115px) translateX(30px) translateY(15px)";
+      sneaker.style.transform = "translateZ(100px)";
     });
 
     //Animate Out
