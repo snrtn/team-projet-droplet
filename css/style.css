@@ -536,15 +536,17 @@ button:hover {
   border: 1px solid darkblue;
   /* background: url(/images/u/nite.jpg) no-repeat center center; */
   /* background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .tab-inner {
   border: 1px solid red;
   width: 160px;
   height: 200px;
   position: absolute;
-  text-align: center;
-  width: 100%;
+  /* text-align: center; */
+  /* width: 100%; */
 }
 input[name="tabmenu"] {
   display: none;
