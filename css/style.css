@@ -752,10 +752,7 @@ input[id="tab3"]:checked~.btn label[for="tab3"] {
   background-repeat: no-repeat;
 
   background-color: transparent;
-
 }
-
-
 
 .sneaker {
   min-height: 35vh;
