@@ -662,7 +662,7 @@ button:hover {
   height: var(--MainHeight);
   /* background: url(/images/u/nite.jpg) no-repeat center center; */
   /* background-size: cover; */
-  /* background-color: #000; */
+  background-color: #000;
 }
 
 .tab-inner {
@@ -714,7 +714,61 @@ input[id="tab3"]:checked~.btn label[for="tab3"] {
 /* ########################################*/
 
 .section06 {
-  background-color:  var(--BlackColor);
+  /* background-color:  var(--BlackColor); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 600px;
+}
+
+.info h3 {
+  padding-bottom: 10px;
+  
+  cursor: pointer;
+}
+
+.info a {
+  padding-top: 10px;
+  display: block;
+  color: #000;
+  font-weight: normal;
+}
+
+.info a:hover {
+  color: var(--OrangeColor);
+}
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 5rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+
+  background-image: url('../images/juni/phone.png');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: transparent;
+
+}
+
+
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker img {
+  padding-top: 50px;
+
+  width: 15rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
 }
 
 
