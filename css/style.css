@@ -457,7 +457,7 @@ button:hover {
 .u_text1 {
   font-size: 2.3em;
   /* margin: 0px 20px 20px 20px; */
-  padding: 65px 10px 10px 10px;
+  padding: 80px 10px 10px 10px;
   color: white;
   text-align: center;
 }
@@ -465,7 +465,7 @@ button:hover {
 .u_text2 {
   font-size: 1.3em;
   /* margin: 10px 10px 10px 10px; */
-  padding: 20px;
+  padding: 30px;
   color: rgb(223, 223, 223);
   text-align: center;
 }
@@ -554,7 +554,7 @@ input[name="tabmenu"] {
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 10px;
+  bottom: 20px;
 }
 .btn label {
   background-color: lightgray;
@@ -724,7 +724,7 @@ footer {
   background-color: var(--BlackColor);
 }
 
-.box_footer ul{
+.box_footer ul {
   display: inline-table;
 
   width: 100px;
