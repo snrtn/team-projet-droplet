@@ -244,11 +244,7 @@
   <script>
     const container06 = document.querySelector(".container");
     const card = document.querySelector(".card");
-
-    //Items
     const sneaker = document.querySelector(".sneaker img");
-
-    //Moving Animation Event
     container.addEventListener("mousemove", (e) => {
       if ($(this).scrollTop() > 2600) {
         let xAxis = (window.innerWidth / 2 - e.screenX) / 100;
@@ -261,19 +257,13 @@
         card.style.transform = "none";
       }
     });
-
-    //Animate In
     container.addEventListener("mouseenter", (e) => {
       card.style.transition = "none";
-      //Popout
       sneaker.style.transform = "translateZ(100px)";
     });
-
-    //Animate Out
     container.addEventListener("mouseleave", (e) => {
       card.style.transition = "all 0.5s ease";
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-      //Popback
       sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
     });
   </script>
