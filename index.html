@@ -205,16 +205,13 @@
   <!-- SECTION -->
   <section class="section06">
     <h3 class="info">모바일 앱으로 스마트폰 안에서도 즐겨보세요!!
-      <a href="#none">안드로이드 바로가기 <</a>
-      <a href="#none">아이폰 바로가기 <</a>
-    </h3>
-    <div class="container">
-      <div class="card">
-        <div class="sneaker">
-          <img src="./images/juni/LaJoconde .png" alt="">
-        </div>
-      </div>
-    </div>
+      <a href="#none">안드로이드 바로가기 <</a> <a href="#none">아이폰 바로가기 <</a> </h3> <div class="container">
+            <div class="card">
+              <div class="sneaker">
+                <img src="./images/juni/LaJoconde .png" alt="">
+              </div>
+            </div>
+            </div>
   </section>
 
   <!-- Juni -->
@@ -253,10 +250,11 @@
 
     //Moving Animation Event
     container.addEventListener("mousemove", (e) => {
-      
-      let xAxis = (window.innerWidth / 2 - e.screenX) / 100;
-      let yAxis = (window.innerHeight / 2 - e.screenY) / 100;
-      card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+      if ($(this).scrollTop() > 2600) {
+        let xAxis = (window.innerWidth / 2 - e.screenX) / 100;
+        let yAxis = (window.innerHeight / 2 - e.screenY) / 100;
+        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+      }
     });
 
     //Animate In

@@ -740,7 +740,7 @@ input[id="tab3"]:checked~.btn label[for="tab3"] {
 }
 .card {
   transform-style: preserve-3d;
-  min-height: 80vh;
+  min-height: 65vh;
   width: 5rem;
   border-radius: 30px;
   padding: 0rem 5rem;
