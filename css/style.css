@@ -533,12 +533,13 @@ button:hover {
   /* width: 100%; */
   width: var(--FullWidth);
   height: var(--MainHeight);
+  border: 1px solid darkblue;
   /* background: url(/images/u/nite.jpg) no-repeat center center; */
   /* background-size: cover; */
 }
 
 .tab-inner {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 160px;
   height: 200px;
   position: relative;
