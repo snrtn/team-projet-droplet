@@ -255,6 +255,11 @@
         let yAxis = (window.innerHeight / 2 - e.screenY) / 100;
         card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
       }
+      if ($(this).scrollTop() < 2800) {
+        let xAxis = (window.innerWidth / 2 - e.screenX) / 100;
+        let yAxis = (window.innerHeight / 2 - e.screenY) / 100;
+        card.style.transform = "none";
+      }
     });
 
     //Animate In
