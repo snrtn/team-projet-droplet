@@ -548,6 +548,9 @@ button:hover {
   /* text-align: center; */
   /* width: 100%; */
 }
+.tab-inner img {
+  position: absolute;
+}
 input[name="tabmenu"] {
   display: none;
 }
