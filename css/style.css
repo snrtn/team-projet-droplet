@@ -559,24 +559,12 @@ input[name="tabmenu"] {
 .content {
   display: none;
 }
-/* .content .slide1 {
-  position: absolute;
-  text-align: center;
-}
-.content .slide2 {
-  position: absolute;
-  text-align: center;
-}
-.content .slide3 {
-  position: absolute;
-  text-align: center;
-} */
 .btn {
   /* border: 1px solid blue; */
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 20px;
+  bottom: 10px;
 }
 .btn label {
   background-color: lightgray;
