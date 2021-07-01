@@ -4,7 +4,7 @@
 <head>
   <title>Droplet</title>
 
-  <link rel="icon" href="droplet.ico" />
+  <link rel="icon" href="/droplet.ico" />
 
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
@@ -92,12 +92,6 @@
 
   <!-- moni -->
   <section class="section02">
-<<<<<<< HEAD
-    <div class="container">
-      <div class="card">
-        <img src="">
-        <div class="content"></div>
-=======
     <div class="wrapper">
       <div class="gallery">
         <h1>Art Gallery</h1>
@@ -118,8 +112,6 @@
           <p>Lorem ipsum dolor sit amet.</p>
           <img src="http://placehold.it/150x200" />
         </div>
-        <div class="content slide2">
-          <img src="images/u/paint16.png" />
         <div class="photo">
           <h4>모네</h4>
           <p>Lorem ipsum dolor sit amet.</p>
@@ -144,28 +136,21 @@
     </div>
   </section>
 
-  <!-- beginner U -->
+  <!-- U -->
   <section class="section03">
-    <div class="u_text1">Where do you want to discover exhibition?</div>
-    <div class="u_text2">Explore colletions around the world</div>
-    <div class="container">
-      <div class="icon">
-        <a href="#none"><img src="images/u/musical16.png" /></a>
-        <span> 2 </span>
-      </div>
-      <div class="icon">
-        <a href="#none"><img src="images/u/paint16.png" /></a>
-        <span> Paintings you've never expected </span>
-      </div>
-      <div class="icon">
-        <a href="#none"><img src="images/u/play16.png" /></a>
-        <span> Plays you've never expected </span>
-      </div>
-      <div class="icon">
-        <a href="#none"><img src="images/u/concert16.png" /></a>
-        <span> Concerts fascinating your ears </span>
->>>>>>> a1a1dd7064aeea4b13a631775f5596ae1682ae9f
-      </div>
+    <h2 class="u_text">Where do you want to discover exhibition?</h2>
+    <h4 class="u_text">Explore colletions around the world</h4>
+    <div class="u_side">side</div>
+    <div class="u_pick">1</div>
+    <div class="u_pick">2</div>
+    <div class="u_pick">3</div>
+    <div class="u_pick">4</div>
+    <div class="u_con">
+      <div class="u_side">side</div>
+      <div class="u_pick">1</div>
+      <div class="u_pick">2</div>
+      <div class="u_pick">3</div>
+      <div class="u_pick">4</div>
     </div>
   </section>
 
@@ -213,12 +198,12 @@
 
   <!-- SECTION -->
   <section class="section06">
-    <h3 class="info">모바일 앱으로 스마트폰 안에서도 즐겨보세요!!
+    <h3 class="info06">모바일 앱으로 스마트폰 안에서도 즐겨보세요!!
       <a href="#none">안드로이드 바로가기 ◀</a> <a href="#none">아이폰 바로가기 ◀</a>
     </h3>
-    <div class="container">
-      <div class="card">
-        <div class="sneaker">
+    <div class="container06">
+      <div class="card06">
+        <div class="sneaker06">
           <img src="./images/juni/LaJoconde .png" alt="">
         </div>
       </div>
@@ -253,10 +238,10 @@
   </footer>
 
   <script>
-    const container06 = document.querySelector(".container");
-    const card = document.querySelector(".card");
-    const sneaker = document.querySelector(".sneaker img");
-    container.addEventListener("mousemove", (e) => {
+    const container06 = document.querySelector(".container06");
+    const card = document.querySelector(".card06");
+    const sneaker = document.querySelector(".sneaker06 img");
+    container06.addEventListener("mousemove", (e) => {
       if ($(this).scrollTop() > 2600) {
         let xAxis = (window.innerWidth / 2 - e.screenX) / 100;
         let yAxis = (window.innerHeight / 2 - e.screenY) / 100;
@@ -268,11 +253,11 @@
         card.style.transform = "none";
       }
     });
-    container.addEventListener("mouseenter", (e) => {
+    container06.addEventListener("mouseenter", (e) => {
       card.style.transition = "none";
       sneaker.style.transform = "translateZ(100px)";
     });
-    container.addEventListener("mouseleave", (e) => {
+    container06.addEventListener("mouseleave", (e) => {
       card.style.transition = "all 0.5s ease";
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
       sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
