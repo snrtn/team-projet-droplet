@@ -553,6 +553,7 @@ input[name="tabmenu"] {
 }
 .content {
   display: none;
+  position: relative;
 }
 .btn {
   /* border: 1px solid blue; */
