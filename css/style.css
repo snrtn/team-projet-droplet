@@ -348,15 +348,16 @@ header.active .sidenav {
 }
 
 .wrapper {
-  height: 88%;
+  height: 100%;
   display: flex;
-  align-items: center;
-  /* justify-content: center; */
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .gallery {
+  margin-top: 10%;
   flex-basis: 60%;
-  margin-left: 50px;
+  margin-left: 220px;
   z-index: 1;
   animation-name: slid-up;
   animation-duration: 0.6s;
@@ -397,11 +398,13 @@ button {
   text-align: center;
   /* line-height: 10px; */
   border-radius: 10px;
-  padding: 10px;
+  /* padding: 10px; */
   /* padding-top: 10px; */
+  width: 150px;
+  height: 200px;
   box-sizing: border-box;
   cursor: pointer;
-  margin: 0 15px;
+  margin-right: 10px;
   transition: 0.5s;
 }
 
@@ -410,6 +413,7 @@ button {
   padding: 0;
   width: 1000px;
   height: 400px;
+  margin-right: 150px;
 }
 
 h4 {
@@ -421,6 +425,8 @@ h4 {
 .photo p {
   font-size: 13px;
   text-shadow: 0 0 5px #000;
+  margin: 0;
+  padding: 0;
 }
 
 .photo:hover {
@@ -457,9 +463,6 @@ button:hover {
     transform: translateY(20px);
   }
 }
-
-
-
 
 /* ########################################*/
 /* ########## SECTION03 ########## */
