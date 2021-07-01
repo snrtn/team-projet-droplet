@@ -342,12 +342,66 @@ header.active .sidenav {
 /* ########################################*/
 
 .section02 {
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  /* background-color: teal; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  transition: 0.5s;
+}
+.card img {
   width: 100%;
 }
-
-
-
-
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, crimson, transparent);
+  color: #fff;
+  text-align: center;
+  padding-top: 220px;
+  transition: 0.5s;
+}
+.content h2 {
+  font-size: 25px;
+}
+.content p {
+  font-size: 15px;
+  padding-top: 20px;
+}
+.content a {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 13px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.card:hover .content {
+  top: 0;
+}
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+}
+.content a:hover {
+  background-color: #fff;
+  color: #000;
+}
 /* ########################################*/
 /* ########## SECTION03 ########## */
 /* ########################################*/
