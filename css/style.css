@@ -553,6 +553,8 @@ input[name="tabmenu"] {
 }
 .content {
   display: none;
+}
+.content .slide1 {
   position: relative;
 }
 .btn {
