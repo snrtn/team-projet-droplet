@@ -701,6 +701,7 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     transform: translateY(0) rotate(80deg);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
