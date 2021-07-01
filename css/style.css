@@ -541,7 +541,7 @@ button:hover {
   align-items: center;
 }
 .tab-inner {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 240px;
   height: 280px;
   position: relative;
