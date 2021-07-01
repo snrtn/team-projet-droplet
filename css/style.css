@@ -558,6 +558,14 @@ input[name="tabmenu"] {
   position: absolute;
   text-align: center;
 }
+.content .slide2 {
+  position: absolute;
+  text-align: center;
+}
+.content .slide3 {
+  position: absolute;
+  text-align: center;
+}
 .btn {
   /* border: 1px solid blue; */
   position: absolute;
