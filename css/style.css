@@ -146,7 +146,7 @@ header {
   position: relative;
 }
 
-.gnb li:hover > a {
+.gnb li:hover>a {
   color: #d99578;
 }
 
@@ -540,6 +540,7 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
 .tab-inner {
   border: 1px solid red;
   width: 160px;
@@ -548,12 +549,15 @@ button:hover {
   /* text-align: center; */
   /* width: 100%; */
 }
+
 input[name="tabmenu"] {
   display: none;
 }
+
 .content {
   display: none;
 }
+
 .btn {
   /* border: 1px solid blue; */
   position: absolute;
@@ -561,6 +565,7 @@ input[name="tabmenu"] {
   width: 100%;
   bottom: 20px;
 }
+
 .btn label {
   background-color: lightgray;
   width: 20px;
@@ -569,14 +574,16 @@ input[name="tabmenu"] {
   border-radius: 50%;
   cursor: pointer;
 }
-input[id="tab1"]:checked ~ .slide1,
-input[id="tab2"]:checked ~ .slide2,
-input[id="tab3"]:checked ~ .slide3 {
+
+input[id="tab1"]:checked~.slide1,
+input[id="tab2"]:checked~.slide2,
+input[id="tab3"]:checked~.slide3 {
   display: block;
 }
-input[id="tab1"]:checked ~ .btn label[for="tab1"],
-input[id="tab2"]:checked ~ .btn label[for="tab2"],
-input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+
+input[id="tab1"]:checked~.btn label[for="tab1"],
+input[id="tab2"]:checked~.btn label[for="tab2"],
+input[id="tab3"]:checked~.btn label[for="tab3"] {
   background-color: crimson;
 }
 
@@ -588,11 +595,9 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 0.8102591378348214) 96%
-  );
+  background: linear-gradient(180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 0.8102591378348214) 96%);
 }
 
 .title-box {
@@ -706,6 +711,65 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
   }
+}
+
+/* ########################################*/
+/* ########## SECTION06 ########## */
+/* ########################################*/
+
+.section06 {
+  /* background-color:  var(--BlackColor); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 600px;
+}
+
+.info h3 {
+  padding-bottom: 10px;
+
+  cursor: pointer;
+}
+
+.info a {
+  padding-top: 10px;
+  display: block;
+  color: #000;
+  font-weight: normal;
+}
+
+.info a:hover {
+  color: var(--OrangeColor);
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 65vh;
+  width: 5rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+
+  background-image: url('../images/juni/phone.png');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker img {
+  padding-top: 50px;
+
+  width: 12rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
 }
 
 /* ########################################*/
