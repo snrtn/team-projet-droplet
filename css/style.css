@@ -545,13 +545,9 @@ button:hover {
   width: 240px;
   height: 280px;
   position: relative;
-  /* text-align: center; */
-  /* width: 100%; */
 }
 .tab-inner img {
   position: relative;
-  /* text-align: center;
-  width: auto; */
 }
 input[name="tabmenu"] {
   display: none;
