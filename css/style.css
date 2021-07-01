@@ -542,8 +542,8 @@ button:hover {
 }
 .tab-inner {
   border: 1px solid red;
-  width: 160px;
-  height: 200px;
+  width: 240px;
+  height: 280px;
   position: absolute;
   /* text-align: center; */
   /* width: 100%; */
