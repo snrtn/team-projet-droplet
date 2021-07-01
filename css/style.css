@@ -555,7 +555,8 @@ input[name="tabmenu"] {
   display: none;
 }
 .content .slide1 {
-  position: relative;
+  position: absolute;
+  text-align: center;
 }
 .btn {
   /* border: 1px solid blue; */
