@@ -551,7 +551,7 @@ button:hover {
 .tab-inner img {
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 input[name="tabmenu"] {
   display: none;
