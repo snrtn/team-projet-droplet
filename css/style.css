@@ -343,11 +343,12 @@ header.active .sidenav {
 .section02 {
   width: var(--FullWidth);
   height: var(--MainHeight);
-  background: url(/images/moni/Olaf.jpg) no-repeat center center;
-  background-size: cover;
+  background-color: #000;
 }
 
 .wrapper {
+  width: var(--MainWidth);
+  margin: auto;
   height: 100%;
   display: flex;
   align-items: center;
@@ -355,13 +356,13 @@ header.active .sidenav {
 
 .gallery {
   /* flex-basis: 60%; */
-  margin-left: 100px;
+  /* margin-left: 100px; */
   z-index: 1;
 }
 
 h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 32px;
 }
 
 p {
@@ -379,7 +380,6 @@ button {
   border: none;
   margin-top: 20px;
   cursor: pointer;
-  position: relative;
   overflow: hidden;
   z-index: 1;
 }
@@ -388,7 +388,6 @@ button {
   /* width: 730px; */
   /*  height: 730px; */
   /* border: 1px solid red; */
-  position: absolute;
   left: 45%;
   text-align: center;
 }
@@ -424,7 +423,6 @@ h4 {
 
 button::after {
   content: "";
-  position: absolute;
   width: 0;
   height: 100%;
   background-color: rgb(91, 134, 17);
