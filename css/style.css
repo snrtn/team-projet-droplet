@@ -156,7 +156,7 @@ header {
 
 .menu {
   display: none;
-  margin-top: 18px;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -196,6 +196,7 @@ header {
 .side_box {
   width: 100px;
   line-height: 15px;
+  padding: 10px;
 }
 
 .search,
@@ -207,22 +208,21 @@ header {
 .search {
   color: #ddd;
   font-size: 15px;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .hambuger {
-  width: 30px;
-  height: 20px;
+  width: 23px;
+  height: 13px;
   position: relative;
 }
 
 .hambuger span {
   position: absolute;
-  width: 28px;
-  height: 3px;
+  width: inherit;
+  height: 2px;
   background-color: #d99578;
   border-radius: 2px;
-  margin-top: 2px;
   transition: 0.5s;
 }
 
@@ -627,14 +627,15 @@ input[id="tab3"]:checked~.btn label[for="tab3"] {
 }
 
 .img-box {
-  width: 40%;
-  height: inherit;
-  background: url(../images/seon/landing-ex.png) no-repeat top right;
+  width: 35%;
+  background: url(../images/seon/landing-ex.png) no-repeat top left;
   transition: 1s;
+  margin: 40px 80px;
+  border-radius: 20px;
 }
 
 .img-box:hover {
-  background-position: bottom right;
+  background-position: bottom left;
 }
 
 .animation-area {
