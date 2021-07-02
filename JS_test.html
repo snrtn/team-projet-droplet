@@ -2,189 +2,342 @@
 <html>
 
 <head>
-  <title>Document</title>
-  <style>
-    body {
-      margin: 0%;
-      padding: 0%;
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-      height: 100vh;
-    }
-  </style>
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
 
-  <p id="hello">안녕</p>
-  <button id="button">버튼</button>
+    <p id="hello">안녕</p>
+    <button id="button">버튼</button>
 
-  <button id="button2">버튼2</button>
+    <button id="button2">버튼2</button>
 
-  <script>
-    // 'use strict';
+    <script>
+        // // 'use strict';
 
-    // 함수나 변수를 전역공간에서 만들면 {window}에 보관합니다.
+        // // 함수나 변수를 전역공간에서 만들면 {window}에 보관합니다.
 
-    document.getElementById('button').addEventListener('click', () => {
-      change('바보');
-    })
+        // document.getElementById('button').addEventListener('click', () => {
+        //     change('바보');
+        // })
 
-    function change(a) {
-      document.getElementById('hello').innerHTML = a
-    }
+        // function change(a) {
+        //     document.getElementById('hello').innerHTML = a
+        // }
 
-    var name = ['Bang', 'Bang', 20, undefined, null];
-    console.log(name[0]);
+        // var name = ['Bang', 'Bang', 20, undefined, null];
+        // console.log(name[0]);
 
-    var name2 = {
-      name: 'Bang',
-      age: 20
-    };
-    console.log(name2.age);
+        // var name2 = {
+        //     name: 'Bang',
+        //     age: 20
+        // };
+        // console.log(name2.age);
 
-    if (1 === '1' && 2 === 2) {
-      console.log('안녕');
-    } else if (3 === 4) {
-      console.log('안녕2');
-    } else {
-      console.log('안녕못함');
-    }
-    // 등호 == 2개는 1 == '1' true
-    // 등호 === 3개는 1 === '1' false
+        // if (1 === '1' && 2 === 2) {
+        //     console.log('안녕');
+        // } else if (3 === 4) {
+        //     console.log('안녕2');
+        // } else {
+        //     console.log('안녕못함');
+        // }
+        // // 등호 == 2개는 1 == '1' true
+        // // 등호 === 3개는 1 === '1' false
 
-    for (var i = 0; i < 5; i++) {
-      console.log('하나');
-    }
+        // for (var i = 0; i < 5; i++) {
+        //     console.log('하나');
+        // }
 
-    ['하나', '둘', '셋', '넷', '다섯'].forEach(function (a) {
-      console.log(a);
-    });
+        // ['하나', '둘', '셋', '넷', '다섯'].forEach(function (a) {
+        //     console.log(a);
+        // });
 
-    // console.log(this);
+        // // console.log(this);
 
-    function 함수5() {
-      console.log(this);
-    }
-    window.함수5();
-    // window:{
-    //   함수(){
-    //     console.log();
-    //   }
-    // }
-    // 오브젝트 내 함수안에서 this를 쓰면 그 함수를 가지고 있는 오브젝트를 뜻함
+        // function 함수5() {
+        //     console.log(this);
+        // }
+        // window.함수5();
+        // // window:{
+        // //   함수(){
+        // //     console.log();
+        // //   }
+        // // }
+        // // 오브젝트 내 함수안에서 this를 쓰면 그 함수를 가지고 있는 오브젝트를 뜻함
 
-    var 오브젝트 = {
-      data: 'Bang',
-      함수: function () {
-        console.log(this);
-      }
-    }
-    // 오브젝트 내 함수안에서 this를 쓰면 그 함수를 가지고 있는 오브젝트를 뜻함
-    오브젝트.함수();
+        // var 오브젝트 = {
+        //     data: 'Bang',
+        //     함수: function () {
+        //         console.log(this);
+        //     }
+        // }
+        // // 오브젝트 내 함수안에서 this를 쓰면 그 함수를 가지고 있는 오브젝트를 뜻함
+        // 오브젝트.함수();
 
 
-    var 오브젝트2 = {
-      data2: {
-        함수2: () => {
-          console.log(this);
+        // var 오브젝트2 = {
+        //     data2: {
+        //         함수2: () => {
+        //             console.log(this);
+        //         }
+        //     }
+        // }
+        // 오브젝트2.data2.함수2();
+        // // function(){}
+        // // () => {}
+        // // Arrow Function 특징은 this 값을 함수밖에 있던거 그대로 씀
+
+        // var 오브젝트3 = {
+        //     data3: {
+        //         함수3() {
+        //             console.log(this);
+        //         }
+        //     }
+        // }
+        // 오브젝트3.data3.함수3();
+
+        // var 어쩌구 = {}
+        // // 오브젝트 생성기계 constructor
+        // function 기계() {
+        //     this.이름 = 'kim'
+        //     // 새로 생성되는 오브젝트 (instance)
+        // }
+        // var 오브젝트6 = new 기계();
+
+        // document.getElementById('button2').addEventListener('click', function (e) {
+        //     // console.log(this);
+        //     // console.log(e.currentTarget);
+        //     // e.currentTarget 지금 이벤트가 동작하는 곳
+
+        //     var 어레이 = ['멍청이', '똥개', '말미잘'];
+        //     어레이.forEach(function (z) {
+        //         // function(){} 은 콜백함수다
+        //         // 그냥 함수안에 들어가는 함수를 콜백함수라고 부른다.
+        //         console.log(z);
+        //         // console.log(this) window 출력
+        //     });
+
+        // })
+        // // 똑같은 의미 바닐라에서
+        // // document.getElementById('button2')
+        // // console.log(this);
+        // // console.log(e.currentTarget);
+
+
+        // var newObject = {
+        //     nom: ['kim', 'mara', 'call'],
+        //     함수123: function () {
+        //         console.log(this);
+        //         // 함수의 주인을 출력해줌
+        //         // arrow function 상위호한
+        //         newObject.nom.forEach(() => {
+        //             console.log(this)
+        //             // window
+        //             // 근본없는 일반함수에서 this를 출력하면 window가 나온다.
+        //             // 전역함수
+        //         })
+        //     }
+        // }
+        // newObject.함수123();
+
+        // // 함수 첫번쨰 
+        // function 함수이름890() {
+
+        // }
+
+        // // 실행
+        // 함수이름890();
+
+        // // 함수 두번쨰
+        // var 함수이름2 = function () {
+
+        // }
+        // // 실행
+        // 함수이름2();
+
+
+        // // es6
+        // var 함수456 = (a, b) => {
+        //     // ()안에 파라미터를 넣어서 써야한다.
+        //     // 파라미터가 하나 뿐일 떄는 소괄호를 생갹할 수 있디.
+        //     // var 함수456 = a => {}
+        //     // 코드들의 기능을 한단어로 만들어 쓰고 싶을 때
+        //     return a + b + 100;
+        //     // 입출력 기계를 만들고 싶을 떄 사용수
+        // }
+        // 함수456(5, 15);
+        // // 5를 넣었으니까 120가 나온다.
+
+        // // forEach 콜백함수 
+        // [1, 2, 3, 4, 5].forEach(asd => console.log(asd))
+
+
+        // // class
+        // // class는 틀을 정의한다.
+        // class Car {
+        //     constructor(modelName, modelYear, type, price) {
+        //         this.modelName = modelName;
+        //         this.modelYear = modelYear;
+        //         this.type = type;
+        //         this.price = price;
+        //     }
+
+        //     getModelName() {
+        //         return this.modelName;
+        //     }
+
+        //     getModelYear() {
+        //         return this.modelYear;
+        //     }
+
+        //     getPrice() {
+        //         return this.price;
+        //     }
+
+        //     setPrice(price) {
+        //         this.price = price;
+        //     }
+        // }
+
+        // let car = new Car("ionic", "2021", "e", 4000);
+        // console.log(car.getModelName());
+        // console.log(car.getModelYear());
+        // console.log(car.getPrice());
+        // car.setPrice(4100);
+        // console.log(car.getPrice());
+
+
+        // let car2 = new Car("renault", "2021", "e", 6500);
+        // console.log(car2.getModelName());
+        // console.log(car2.getModelYear());
+        // console.log(car2.getPrice());
+
+        // // extends 상속받는다
+        // class ElectronicCar extends Car {
+        //     constructor(modelName, modelYear, price, ) {
+        //         super(modelName, modelYear, "e", price)
+        //         // this.changeTime = changeTime;
+        //     }
+
+        //     setChangeTime(time) {
+        //         this.changeTime = time;
+        //     }
+
+        //     getChangeTime() {
+        //         return this.changeTime;
+        //     }
+        // }
+        // let eleCar1 = new ElectronicCar("renault05", "2021", 6500, 60);
+        // eleCar1.setChangeTime(60);
+        // console.log(eleCar1.getModelName());
+        // console.log(eleCar1.getChangeTime());
+
+
+
+        // // class02
+        // // 클래스틑 오브젝트 뽑는 기계!?
+        // // {Object} 자료형
+        // // var nunu = {
+        // //     q: 'consume',
+        // //     w: 'snowball'
+        // // }
+
+        // // var garen = {
+        // //     q: 'strike',
+        // //     w: 'courage'
+        // // }
+
+        // // class 기계(파라미터){}
+
+        // function 기계(q, w) {
+        //     this.q = q;
+        //     this.w = w;
+        //     // 새로 생성되는 오브젝트에 {w:'snowball'}추가해주세요
+        // }
+        // // this는 기계로부터 생성되는 object
+        // var nunu = new 기계('consume', 'snowball');
+        // var garen = new 기계('strike', 'courage');
+
+        // // es6 신문법
+        // class Hero {
+        //     constructor(q, w) {
+        //         this.q = q;
+        //         this.w = w;
+        //     }
+        // }
+
+        // var coco = new Hero('consume', 'snowball');
+        // var chichi = new Hero('strike', 'courage');
+
+
+        // // class03
+        // class Users {
+        //     constructor(firstname, lastname) {
+        //         this.firstname = firstname
+        //         this.lastname = lastname
+        //     }
+
+        //     get fullname() {
+        //         return this.getFullName()
+        //     }
+
+        //     getFullName() {
+        //         return this.firstname + ' ' + this.lastname
+        //     }
+        // }
+
+        // let user = new Users('mara', 'santa')
+
+        // console.log(user.fullname);
+
+        // class04
+        class Person {
+            constructor(firstName, lastName, age) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+            }
+
+            // speak() {
+            //     console.log(`${this.name}: Hello!`);
+            // }
+
+            get age() {
+                return this._age;
+            }
+
+            set age(value){
+                // if (value < 0) {
+                //     throw Error("regardez votre l'age");
+                // }
+                this._age = value < 0 ? 0 : value;
+            }
         }
-      }
-    }
-    오브젝트2.data2.함수2();
-    // function(){}
-    // () => {}
-    // Arrow Function 특징은 this 값을 함수밖에 있던거 그대로 씀
 
-    var 오브젝트3 = {
-      data3: {
-        함수3() {
-          console.log(this);
-        }
-      }
-    }
-    오브젝트3.data3.함수3();
+        // const mara = new Person('mara', 25);
+        // console.log(mara.name);
+        // console.log(mara.age);
+        // mara.speak();
 
-    var 어쩌구 = {}
-    // 오브젝트 생성기계 constructor
-    function 기계() {
-      this.이름 = 'kim'
-      // 새로 생성되는 오브젝트 (instance)
-    }
-    var 오브젝트6 = new 기계();
+        const user = new  Person('Steve', 'job', -1);
+        console.log(user.age);
 
-    document.getElementById('button2').addEventListener('click', function(e){
-      // console.log(this);
-      // console.log(e.currentTarget);
-      // e.currentTarget 지금 이벤트가 동작하는 곳
-
-      var 어레이 = ['멍청이','똥개','말미잘'];
-      어레이.forEach(function(z){
-        // function(){} 은 콜백함수다
-        // 그냥 함수안에 들어가는 함수를 콜백함수라고 부른다.
-        console.log(z);
-        // console.log(this) window 출력
-      });
-
-    })
-    // 똑같은 의미 바닐라에서
-    // document.getElementById('button2')
-    // console.log(this);
-    // console.log(e.currentTarget);
-    
-
-    var newObject = {
-      nom : ['kim', 'mara', 'call'],
-      함수123 : function(){
-        console.log(this);
-        // 함수의 주인을 출력해줌
-        // arrow function 상위호한
-        newObject.nom.forEach(()=>{
-          console.log(this)
-          // window
-          // 근본없는 일반함수에서 this를 출력하면 window가 나온다.
-          // 전역함수
-        })
-      }
-    }
-    newObject.함수123();
-
-    // 함수 첫번쨰 
-    function 함수이름890() {
-
-    }
-
-    // 실행
-    함수이름890();
-
-    // 함수 두번쨰
-    var 함수이름2 = function() {
-
-    }
-    // 실행
-    함수이름2();
+        
 
 
-    // es6
-    var 함수456 = (a, b) => {
-      // ()안에 파라미터를 넣어서 써야한다.
-      // 파라미터가 하나 뿐일 떄는 소괄호를 생갹할 수 있디.
-      // var 함수456 = a => {}
-      // 코드들의 기능을 한단어로 만들어 쓰고 싶을 때
-      return a + b + 100;
-      // 입출력 기계를 만들고 싶을 떄 사용수
-    }
-    함수456(5, 15);
-    // 5를 넣었으니까 120가 나온다.
-
-    // forEach 콜백함수 
-    [1,2,3,4,5].forEach(asd => console.log(asd))
-  
-
-  </script>
+    </script>
 </body>
 
 </html>
