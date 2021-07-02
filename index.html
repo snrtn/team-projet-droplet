@@ -294,15 +294,18 @@
     const container = document.querySelector(".container06");
     const card = document.querySelector(".card06");
     const sneaker = document.querySelector(".sneaker06 img");
+
     container.addEventListener("mousemove", (e) => {
-      let xAxis = (window.innerWidth / 2 - e.screenX) / 200;
-      let yAxis = (window.innerHeight / 2 - e.screenY) / 150;
+      let xAxis = (window.innerWidth / 2 - e.screenX) / 25;
+      let yAxis = (window.innerHeight / 2 - e.screenY) / 25;
       card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     });
+
     container.addEventListener("mouseenter", (e) => {
       card.style.transition = "none";
-      sneaker.style.transform = "translateZ(100px)";
+      sneaker.style.transform = "translateZ(200px)";
     });
+    
     container.addEventListener("mouseleave", (e) => {
       card.style.transition = "all 0.5s ease";
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
