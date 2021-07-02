@@ -295,8 +295,8 @@
     const sneaker = document.querySelector(".sneaker06 img");
     container06.addEventListener("mousemove", (e) => {
       if ($(this).scrollTop() > 2600) {
-        let xAxis = (window.innerWidth / 2 - e.screenX) / 20;
-        let yAxis = (window.innerHeight / 2 - e.screenY) / 20;
+        let xAxis = (window.innerWidth / 2 - e.screenX) / 150;
+        let yAxis = (window.innerHeight / 2 - e.screenY) / 150;
         card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
       }
       if ($(this).scrollTop() < 2800) {
