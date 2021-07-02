@@ -362,12 +362,12 @@ header.active .sidenav {
 
 h1 {
   color: #fff;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 p {
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 button {
@@ -391,6 +391,7 @@ button {
   /* border: 1px solid red; */
   left: 45%;
   text-align: center;
+  margin-left: 35px;
 }
 
 .photo {
