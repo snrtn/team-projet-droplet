@@ -263,6 +263,26 @@
     </div>
   </section>
 
+  <section class="section07">
+    <div class="container_07">
+
+      <div class="slider">
+        <img class="active"
+          src="https://images.unsplash.com/photo-1559467713-f830ec30e3e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+        <img
+          src="https://images.unsplash.com/photo-1590634875887-a6a516622e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80">
+        <img
+          src="https://images.unsplash.com/photo-1590664216212-62e763768cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+      </div>
+
+      <div class="cont-btn">
+        <div class="btn-nav left">←</div>
+        <div class="btn-nav right">→</div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Juni -->
   <footer>
     <div class="box_footer">
@@ -291,6 +311,8 @@
   </footer>
 
   <script>
+
+    // 3D phone
     const container = document.querySelector(".container06");
     const card = document.querySelector(".card06");
     const sneaker = document.querySelector(".sneaker06 img");
@@ -305,13 +327,42 @@
       card.style.transition = "none";
       sneaker.style.transform = "translateZ(200px)";
     });
-    
+
     container.addEventListener("mouseleave", (e) => {
       card.style.transition = "all 0.5s ease";
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
       sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
     });
 
+    // slide image
+    const items = document.querySelectorAll('.slider img');
+    const nbSlide = items.length;
+    const suivant = document.querySelector('.right');
+    const precedent = document.querySelector('.left');
+    let count = 0;
+
+    function slideSuivante() {
+      items[count].classList.remove('active');
+      if (count < nbSlide - 1) {
+        count++;
+      } else {
+        count = 0;
+      }
+      items[count].classList.add('active')
+      console.log(count);
+    }
+    suivant.addEventListener('click', slideSuivante)
+
+    function slidePrecedente() {
+      items[count].classList.remove('active');
+      if (count > 0) {
+        count--;
+      } else {
+        count = nbSlide - 1;
+      }
+      items[count].classList.add('active')
+    }
+    precedent.addEventListener('click', slidePrecedente)
   </script>
 </body>
 
