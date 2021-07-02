@@ -267,12 +267,16 @@
     <div id="exemple_body">
       <div id="exemple_box1">
         <img src="./images/juni/woman.jpg" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat distinctio, adipisci iste dolorem maiores eveniet labore earum voluptas iure laborum, eius suscipit libero. Ipsa magni totam vero tenetur exercitationem.</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat distinctio, adipisci iste dolorem
+          maiores eveniet labore earum voluptas iure laborum, eius suscipit libero. Ipsa magni totam vero tenetur
+          exercitationem.</h3>
         <a href="#none">go site</a>
       </div>
       <div id="exemple_box2">
         <img src="./images/juni/raccoon.jpg" alt="">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat distinctio, adipisci iste dolorem maiores eveniet labore earum voluptas iure laborum, eius suscipit libero. Ipsa magni totam vero tenetur exercitationem.</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat distinctio, adipisci iste dolorem
+          maiores eveniet labore earum voluptas iure laborum, eius suscipit libero. Ipsa magni totam vero tenetur
+          exercitationem.</h3>
         <a href="#none">go site</a>
       </div>
     </div>
@@ -307,26 +311,19 @@
   </footer>
 
   <script>
-    const container06 = document.querySelector(".container06");
+    const container = document.querySelector(".container06");
     const card = document.querySelector(".card06");
     const sneaker = document.querySelector(".sneaker06 img");
-    container06.addEventListener("mousemove", (e) => {
-      if ($(this).scrollTop() > 2600) {
-        let xAxis = (window.innerWidth / 2 - e.screenX) / 200;
-        let yAxis = (window.innerHeight / 2 - e.screenY) / 150;
-        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-      }
-      if ($(this).scrollTop() < 2800) {
-        let xAxis = (window.innerWidth / 2 - e.screenX) / 20;
-        let yAxis = (window.innerHeight / 2 - e.screenY) / 20;
-        card.style.transform = "none";
-      }
+    container.addEventListener("mousemove", (e) => {
+      let xAxis = (window.innerWidth / 2 - e.screenX) / 200;
+      let yAxis = (window.innerHeight / 2 - e.screenY) / 150;
+      card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     });
-    container06.addEventListener("mouseenter", (e) => {
+    container.addEventListener("mouseenter", (e) => {
       card.style.transition = "none";
       sneaker.style.transform = "translateZ(100px)";
     });
-    container06.addEventListener("mouseleave", (e) => {
+    container.addEventListener("mouseleave", (e) => {
       card.style.transition = "all 0.5s ease";
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
       sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
