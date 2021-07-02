@@ -340,7 +340,7 @@ header.active .sidenav {
 /* ########## SECTION02 ########## */
 /* ########################################*/
 
-.section02{
+.section02 {
   width: var(--FullWidth);
   height: var(--MainHeight);
   background: url(/images/moni/Olaf.jpg) no-repeat center center;
@@ -386,7 +386,7 @@ button {
 
 .content {
   /* width: 730px; */
- /*  height: 730px; */
+  /*  height: 730px; */
   /* border: 1px solid red; */
   position: absolute;
   left: 45%;
@@ -768,6 +768,89 @@ input[id="tab3"]:checked~.btn label[for="tab3"] {
   width: 12rem;
   z-index: 2;
   transition: all 0.75s ease-out;
+}
+
+/* ########################################*/
+/* ########## sectionMoni ########## */
+/* ########################################*/
+
+.section_moni {
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  /* background-color: teal; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_moni {
+  display: flex;
+  justify-content: center;
+}
+
+.card_moni {
+  
+  position: relative;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  transition: 0.5s;
+}
+
+.card_moni img {
+  width: 100%;
+  /* background: url(/images/moni/Olaf.jpg) no-repeat center center; */
+  background-size: cover;
+}
+
+.content_moni {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, crimson, transparent);
+  color: #fff;
+  text-align: center;
+  padding-top: 220px;
+  transition: 0.5s;
+}
+
+.content_moni h2 {
+  font-size: 25px;
+}
+
+.content_moni p {
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.content_moni a {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 13px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.card_moni:hover .content {
+  top: 0;
+}
+
+.card_moni:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+}
+
+.content_moni a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* ########################################*/
