@@ -524,65 +524,6 @@ button:hover {
   visibility: visible;
 }
 
-/* ########################################*/
-/* ########## SECTION05 ########## */
-/* ########################################*/
-
-.section05 {
-  /* width: 100%; */
-  width: var(--FullWidth);
-  height: var(--MainHeight);
-  border: 1px solid darkblue;
-  /* background: url(/images/u/nite.jpg) no-repeat center center; */
-  /* background-size: cover; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tab-inner {
-  /* border: 1px solid red; */
-  width: 240px;
-  height: 280px;
-  position: relative;
-}
-
-.tab-inner img {
-  position: relative;
-}
-
-input[name="tabmenu"] {
-  display: none;
-}
-
-.btn {
-  /* border: 1px solid blue; */
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 10px;
-}
-
-.btn label {
-  background-color: lightgray;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-input[id="tab1"]:checked~.slide1,
-input[id="tab2"]:checked~.slide2,
-input[id="tab3"]:checked~.slide3 {
-  display: block;
-}
-
-input[id="tab1"]:checked~.btn label[for="tab1"],
-input[id="tab2"]:checked~.btn label[for="tab2"],
-input[id="tab3"]:checked~.btn label[for="tab3"] {
-  background-color: crimson;
-}
 
 /* ########################################*/
 /* ########## SECTION04 ########## */
@@ -768,6 +709,66 @@ input[id="tab3"]:checked~.btn label[for="tab3"] {
   width: 12rem;
   z-index: 2;
   transition: all 0.75s ease-out;
+}
+
+/* ########################################*/
+/* ########## SECTION05 ########## */
+/* ########################################*/
+
+.section05 {
+  /* width: 100%; */
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  border: 1px solid darkblue;
+  /* background: url(/images/u/nite.jpg) no-repeat center center; */
+  /* background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-inner {
+  /* border: 1px solid red; */
+  width: 240px;
+  height: 280px;
+  position: relative;
+}
+
+.tab-inner img {
+  position: relative;
+}
+
+input[name="tabmenu"] {
+  display: none;
+}
+
+.btn {
+  /* border: 1px solid blue; */
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+.btn label {
+  background-color: lightgray;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[id="tab1"]:checked~.slide1,
+input[id="tab2"]:checked~.slide2,
+input[id="tab3"]:checked~.slide3 {
+  display: block;
+}
+
+input[id="tab1"]:checked~.btn label[for="tab1"],
+input[id="tab2"]:checked~.btn label[for="tab2"],
+input[id="tab3"]:checked~.btn label[for="tab3"] {
+  background-color: crimson;
 }
 
 /* ########################################*/
