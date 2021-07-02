@@ -340,23 +340,9 @@ header.active .sidenav {
 /* ########## SECTION02 ########## */
 /* ########################################*/
 
-.section02 {
+.section02{
   width: var(--FullWidth);
   height: var(--MainHeight);
-  /* background-color: teal; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card {
-  position: relative;
-  margin: 25px;
-  width: 300px;
-  height: 500px;
-  transition: 0.5s;
-}
-.card img {
-  width: 100%;
   background: url(/images/moni/Olaf.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -364,17 +350,13 @@ header.active .sidenav {
 .wrapper {
   height: 100%;
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
+  align-items: center;
 }
 
 .gallery {
-  margin-top: 10%;
-  flex-basis: 60%;
-  margin-left: 220px;
+  /* flex-basis: 60%; */
+  margin-left: 100px;
   z-index: 1;
-  animation-name: slid-up;
-  animation-duration: 0.6s;
 }
 
 h1 {
@@ -384,17 +366,15 @@ h1 {
 
 p {
   color: #fff;
-  font-size: 13px;
-  /* line-height: 15px; */
+  font-size: 15px;
 }
 
 button {
-  width: 150px;
-  font-weight: 400;
+  width: 130px;
   color: #000;
   background: #fff;
   font-size: 14px;
-  padding: 7px 0;
+  padding: 7px;
   border-radius: 20px;
   border: none;
   margin-top: 20px;
@@ -402,32 +382,29 @@ button {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  animation-name: slid-up;
-  animation-duration: 1s;
+}
+
+.content {
+  /* width: 730px; */
+ /*  height: 730px; */
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 45%;
+  text-align: center;
 }
 
 .photo {
   /* border: 1px solid red; */
   display: inline-block;
   text-align: center;
-  /* line-height: 10px; */
-  border-radius: 10px;
-  /* padding: 10px; */
-  /* padding-top: 10px; */
-  width: 150px;
-  height: 200px;
+  line-height: 10px;
+  /* border-radius: 10px; */
+  padding: 0 20px;
+  padding-top: 7px;
   box-sizing: border-box;
   cursor: pointer;
-  margin-right: 10px;
+  margin: 15px;
   transition: 0.5s;
-}
-
-.content {
-  margin: 0;
-  padding: 0;
-  width: 1000px;
-  height: 400px;
-  margin-right: 150px;
 }
 
 h4 {
@@ -437,18 +414,16 @@ h4 {
 }
 
 .photo p {
-  font-size: 13px;
+  font-size: 12px;
   text-shadow: 0 0 5px #000;
-  margin: 0;
-  padding: 0;
 }
 
 .photo:hover {
-  transform: translateY(20px);
+  transform: translateY(-20px);
 }
 
 button::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 100%;
@@ -467,59 +442,6 @@ button:hover {
   color: #fff;
 }
 
-@keyframes slid-up {
-  0% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  padding: 20px;
-  box-sizing: border-box;
-  background: linear-gradient(to top, crimson, transparent);
-  color: #fff;
-  text-align: center;
-  padding-top: 220px;
-  transition: 0.5s;
-}
-.content h2 {
-  font-size: 25px;
-}
-.content p {
-  font-size: 15px;
-  padding-top: 20px;
-}
-.content a {
-  border: 1px solid #fff;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 13px;
-  width: 70px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  margin-top: 30px;
-}
-.card:hover .content {
-  top: 0;
-}
-.card:hover {
-  transform: translateY(-20px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
-}
-.content a:hover {
-  background-color: #fff;
-  color: #000;
-}
 /* ########################################*/
 /* ########## SECTION03 ########## */
 /* ########################################*/
