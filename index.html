@@ -205,7 +205,7 @@
 
   <!-- SECTION -->
   <section class="section06">
-    <h3 class="info06">모바일 앱으로 스마트폰 안에서도 즐겨보세요!!
+    <h3 class="info06" style="color: #fff;">모바일 앱으로 스마트폰 안에서도 즐겨보세요!!
       <a href="#none">안드로이드 바로가기 ◀</a> <a href="#none">아이폰 바로가기 ◀</a>
     </h3>
     <div class="container06">
@@ -263,6 +263,7 @@
     </div>
   </section>
 
+  <!-- Juni -->
   <section class="section07">
     <div class="container_07">
 
@@ -276,10 +277,34 @@
       </div>
 
       <div class="cont-btn">
-        <div class="btn-nav left">◀</div>
-        <div class="btn-nav right">▶</div>
+        <div class="btn-nav left" style="color: #fff;">◀</div>
+        <div class="btn-nav right" style="color: #fff;">▶</div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Juni -->
+  <section class="section08">
+    <div class="container08">
+      <div class="position-relative">
+        <img src="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg"
+          class="img-hover"
+          srcset="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg 665w, https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper-200x300.jpg 200w">
+        <h3>GoShopper</h3>
+      </div>
+      <div class="position-relative">
+        <img src="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg"
+          class="img-hover"
+          srcset="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg 665w, https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper-200x300.jpg 200w">
+        <h3>GoShopper</h3>
+      </div>
+      <div class="position-relative">
+        <img src="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg"
+          class="img-hover"
+          srcset="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg 665w, https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper-200x300.jpg 200w">
+        <h3>GoShopper</h3>
+      </div>
     </div>
   </section>
 
@@ -311,7 +336,6 @@
   </footer>
 
   <script>
-
     // 3D phone
     const container = document.querySelector(".container06");
     const card = document.querySelector(".card06");
@@ -364,6 +388,32 @@
       console.log(count);
     }
     precedent.addEventListener('click', slidePrecedente)
+
+    // start of hover effect
+    let addClass = (elem) => {
+      elem.classList.add('activated');
+      elem.classList.remove('not-activated');
+    }
+    let removeClass = (elem) => {
+      elem.classList.remove('activated');
+      elem.classList.add('not-activated');
+    }
+    let imgHover = document.querySelectorAll('.img-hover');
+
+    for (i = 0; i < imgHover.length; i++) {
+
+      imgHover[i].addEventListener('mouseover', mouseOverEffect);
+      imgHover[i].addEventListener('mouseout', mouseOutEffect);
+
+      function mouseOverEffect() {
+        addClass(this);
+      }
+
+      function mouseOutEffect() {
+        removeClass(this);
+      }
+
+    }
   </script>
 </body>
 
