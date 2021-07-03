@@ -343,7 +343,7 @@ header.active .sidenav {
 .section02 {
   width: var(--FullWidth);
   height: var(--MainHeight);
-  background-color: #000;
+  background-color: var(--BlackColor);
 }
 
 .wrapper {
