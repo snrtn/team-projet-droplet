@@ -664,7 +664,7 @@ button:hover {
   /* width: 100%; */
   width: var(--FullWidth);
   height: var(--MainHeight);
-  border: 1px solid darkblue;
+  /* border: 1px solid darkblue; */
   /* background: url(/images/u/nite.jpg) no-repeat center center; */
   /* background-size: cover; */
   display: flex;
