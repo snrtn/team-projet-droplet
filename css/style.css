@@ -156,7 +156,7 @@ header {
 
 .menu {
   display: none;
-  margin-top: 18px;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -196,6 +196,7 @@ header {
 .side_box {
   width: 100px;
   line-height: 15px;
+  padding: 10px;
 }
 
 .search,
@@ -207,22 +208,21 @@ header {
 .search {
   color: #ddd;
   font-size: 15px;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .hambuger {
-  width: 30px;
-  height: 20px;
+  width: 23px;
+  height: 13px;
   position: relative;
 }
 
 .hambuger span {
   position: absolute;
-  width: 28px;
-  height: 3px;
+  width: inherit;
+  height: 2px;
   background-color: #d99578;
   border-radius: 2px;
-  margin-top: 2px;
   transition: 0.5s;
 }
 
@@ -302,7 +302,6 @@ header.active .sidenav {
 .section01 {
   margin-top: 10px;
   width: 100%;
-  background-color: var(--OrangeColor);
 }
 
 .section01 div {
@@ -342,12 +341,14 @@ header.active .sidenav {
 /* ########################################*/
 
 .section02 {
-  width: 100%;
-  background: url(/images/moni/Olaf.jpg) no-repeat center center;
-  background-size: cover;
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  background-color: var(--BlackColor);
 }
 
 .wrapper {
+  width: var(--MainWidth);
+  margin: auto;
   height: 100%;
   display: flex;
   align-items: center;
@@ -355,42 +356,42 @@ header.active .sidenav {
 
 .gallery {
   /* flex-basis: 60%; */
-  margin-left: 50px;
+  /* margin-left: 100px; */
   z-index: 1;
 }
 
 h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 p {
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 button {
-  width: 150px;
-  /* font-weight: 400; */
+  width: 130px;
   color: #000;
   background: #fff;
   font-size: 14px;
-  padding: 7px 0;
+  padding: 7px;
   border-radius: 20px;
   border: none;
   margin-top: 20px;
   cursor: pointer;
-  position: relative;
   overflow: hidden;
   z-index: 1;
+  position: relative;
 }
 
 .content {
   width: 730px;
-  height: 730px;
+  /*  height: 730px; */
   /* border: 1px solid red; */
-  position: absolute;
   left: 45%;
+  text-align: center;
+  margin-left: 35px;
 }
 
 .photo {
@@ -398,12 +399,12 @@ button {
   display: inline-block;
   text-align: center;
   line-height: 10px;
-  border-radius: 10px;
-  padding: 20px;
-  padding-top: 50px;
+  /* border-radius: 10px; */
+  padding: 0 20px;
+  padding-top: 7px;
   box-sizing: border-box;
   cursor: pointer;
-  margin: 0 15px;
+  margin: 15px;
   transition: 0.5s;
 }
 
@@ -414,12 +415,12 @@ h4 {
 }
 
 .photo p {
-  font-size: 13px;
+  font-size: 12px;
   text-shadow: 0 0 5px #000;
 }
 
 .photo:hover {
-  transform: translateY(20px);
+  transform: translateY(-20px);
 }
 
 button::after {
@@ -471,9 +472,7 @@ button:hover {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   height: 37vh;
 }
 
@@ -481,8 +480,9 @@ button:hover {
   /* border: 1px solid white; */
   width: 160px;
   height: 160px;
-  margin: 20px;
-  position: relative;
+  display: inline-block;
+  margin-left: 170px;
+  margin-top: 70px;
 }
 
 .icon span {
@@ -570,14 +570,15 @@ button:hover {
 }
 
 .img-box {
-  width: 40%;
-  height: inherit;
-  background: url(../images/seon/landing-ex.png) no-repeat top right;
+  width: 35%;
+  background: url(../images/seon/landing-ex.png) no-repeat top left;
   transition: 1s;
+  margin: 40px 80px;
+  border-radius: 20px;
 }
 
 .img-box:hover {
-  background-position: bottom right;
+  background-position: bottom left;
 }
 
 .animation-area {
@@ -668,6 +669,345 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
+.tab-inner {
+  /* border: 1px solid red; */
+  width: 240px;
+  height: 280px;
+  position: relative;
+}
+
+.tab-inner img {
+  position: relative;
+}
+
+input[name="tabmenu"] {
+  display: none;
+}
+
+.btn {
+  /* border: 1px solid blue; */
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+.btn label {
+  background-color: lightgray;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[id="tab1"]:checked ~ .slide1,
+input[id="tab2"]:checked ~ .slide2,
+input[id="tab3"]:checked ~ .slide3 {
+  display: block;
+}
+
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background-color: crimson;
+}
+
+/* ########################################*/
+/* ########## SECTION06 ########## */
+/* ########################################*/
+
+.section06 {
+  /* background-color:  var(--BlackColor); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 600px;
+
+  background-color: var(--BlackColor);
+}
+
+.info06 h3 {
+  padding-bottom: 10px;
+
+  cursor: pointer;
+  color: var(--WhiteColor);
+}
+
+.info06 a {
+  padding-top: 10px;
+  display: block;
+  color: #000;
+  font-weight: normal;
+
+  color: var(--WhiteColor);
+}
+
+.info06 a:hover {
+  color: var(--OrangeColor);
+}
+
+.card06 {
+  transform-style: preserve-3d;
+  min-height: 65vh;
+  width: 5rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+
+  background-image: url("../images/juni/phone.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sneaker06 {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker06 img {
+  padding-top: 50px;
+
+  width: 12rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+/* ########################################*/
+/* ########## sectionMoni ########## */
+/* ########################################*/
+
+.section_moni {
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  /* background-color: teal; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--DeepWhiteColor);
+}
+
+.container_moni {
+  display: flex;
+  justify-content: center;
+}
+
+.card_moni {
+  position: relative;
+  margin: 25px;
+  width: 300px;
+  height: 500px;
+  transition: 0.5s;
+}
+
+.card_moni img {
+  width: 100%;
+  /* background: url(/images/moni/Olaf.jpg) no-repeat center center; */
+  background-size: cover;
+}
+
+.content_moni {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, crimson, transparent);
+  color: #fff;
+  text-align: center;
+  padding-top: 220px;
+  transition: 0.5s;
+}
+
+.content_moni h2 {
+  font-size: 25px;
+}
+
+.content_moni p {
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.content_moni a {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 13px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.card_moni:hover .content {
+  top: 0;
+}
+
+.card_moni:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.content_moni a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ########################################*/
+/* ########## section07 ########## */
+/* ########################################*/
+
+.section07 {
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  /* background-color: #000; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--BlackColor);
+}
+
+.container_07 {
+  height: inherit;
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px;
+
+  background-color: var(--BlackColor);
+}
+
+.slider img {
+  max-width: 100%;
+  display: none;
+}
+
+img.active {
+  display: block;
+  animation: fade 0.8s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-nav {
+  font-size: 24px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* ########################################*/
+/* ########## section08 ########## */
+/* ########################################*/
+
+.section08 {
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--DeepWhiteColor);
+}
+
+.container08 {
+  width: var(--MainWidth);
+  height: var(--MainHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-relative {
+  margin-left: 50px;
+}
+
+.position-relative img {
+  width: 300px;
+  height: 200px;
+}
+
+.position-relative h3 {
+  color: #000;
+}
+
+.img-hover {
+  transition: transform 4s cubic-bezier(0.19, 1, 0.22, 1),
+    -webkit-transform 4s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: right;
+}
+
+.img-hover:hover {
+  transform: rotateY(-35deg) scale(1.15);
+  transform-origin: right;
+}
+
+.img-hover.activated {
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  animation: hoverEffect 1s linear;
+}
+
+.img-hover.not-activated {
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  animation: hoverOutEffect 1s linear;
+}
+
+@keyframes hoverEffect {
+  0% {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  }
+}
+
+@keyframes hoverOutEffect {
+  0% {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  }
+
+  100% {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+/* ########################################*/
+/* ########## SECTION05 ########## */
+/* ########################################*/
+
+.section05 {
+  /* width: 100%; */
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  border: 1px solid darkblue;
+  /* background: url(/images/u/nite.jpg) no-repeat center center; */
+  /* background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .tab-inner {
   /* border: 1px solid red; */
   width: 240px;
@@ -715,6 +1055,7 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
 
 footer {
   width: var(--FullWidth);
+
   height: 200px;
 
   background-color: var(--BlackColor);
