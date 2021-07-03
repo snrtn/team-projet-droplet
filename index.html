@@ -342,8 +342,8 @@
     const sneaker = document.querySelector(".sneaker06 img");
 
     container.addEventListener("mousemove", (e) => {
-      let xAxis = (window.innerWidth / 2 - e.screenX) / 25;
-      let yAxis = (window.innerHeight / 2 - e.screenY) / 25;
+      let xAxis = (window.innerWidth / 2 - e.screenX) / 200;
+      let yAxis = (window.innerHeight / 2 - e.screenY) / 200;
       card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
     });
 
