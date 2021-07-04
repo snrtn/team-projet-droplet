@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Droplet:Contact</title>
+  <link rel="import" href="../Nav_Foot/Navbar.html">
+  <link rel="import" href="../Nav_Foot/Footbar.html">
+</head>
+
+<body>
+  <div data-include-path="../Nav_Foot/Navbar.html"></div>
+
+  <h1>여기에 작성해주세요</h1>
+  
+  <div data-include-path="../Nav_Foot/Footbar.html"></div>
+
+  <script>
+    window.addEventListener('load', function () {
+      var allElements = document.getElementsByTagName('*');
+      Array.prototype.forEach.call(allElements, function (el) {
+        var includePath = el.dataset.includePath;
+        if (includePath) {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              el.outerHTML = this.responseText;
+            }
+          };
+          xhttp.open('GET', includePath, true);
+          xhttp.send();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
