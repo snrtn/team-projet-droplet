@@ -24,7 +24,7 @@
     <div class="test">
       <div class="header-inner">
         <div class="logo">
-          <a href="/index.html"><img src="/images/droplet-logo(ver.2 blue).png" /></a>
+          <a href="/index.html"><img src="" /></a>
           <p id="test">:작은 물방울</p>
         </div>
         <nav>
@@ -50,7 +50,7 @@
             <li>
               <a href="#none">FAQ</a>
               <ul class="menu">
-                <li><a href="#">Contact us</a></li>
+                <li><a href="./html/contac.html">Contact us</a></li>
                 <li>
                   <a href="#">Give us your feedback!</a>
                 </li>
@@ -209,20 +209,6 @@
     </div>
   </section>
 
-  <!-- SECTION -->
-  <section class="section06">
-    <h3 class="info06" style="color: #fff;">모바일 앱으로 스마트폰 안에서도 즐겨보세요!!
-      <a href="#none">안드로이드 바로가기 ◀</a> <a href="#none">아이폰 바로가기 ◀</a>
-    </h3>
-    <div class="container06">
-      <div class="card06">
-        <div class="sneaker06">
-          <img src="./images/juni/LaJoconde .png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- moni -->
   <section class="section_moni">
     <div class="container_moni">
@@ -270,51 +256,6 @@
   </section>
 
   <!-- Juni -->
-  <section class="section07">
-    <div class="container_07">
-
-      <div class="slider">
-        <img class="active"
-          src="https://images.unsplash.com/photo-1559467713-f830ec30e3e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-        <img
-          src="https://images.unsplash.com/photo-1590634875887-a6a516622e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80">
-        <img
-          src="https://images.unsplash.com/photo-1590664216212-62e763768cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-      </div>
-
-      <div class="cont-btn">
-        <div class="btn-nav left" style="color: #fff;">◀</div>
-        <div class="btn-nav right" style="color: #fff;">▶</div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Juni -->
-  <section class="section08">
-    <div class="container08">
-      <div class="position-relative">
-        <img src="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg"
-          class="img-hover"
-          srcset="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg 665w, https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper-200x300.jpg 200w">
-        <h3>GoShopper</h3>
-      </div>
-      <div class="position-relative">
-        <img src="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg"
-          class="img-hover"
-          srcset="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg 665w, https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper-200x300.jpg 200w">
-        <h3>GoShopper</h3>
-      </div>
-      <div class="position-relative">
-        <img src="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg"
-          class="img-hover"
-          srcset="https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper.jpg 665w, https://pivotalmedia.partners/wp-content/uploads/2021/06/Pivotal-Media-Partners-GoShopper-200x300.jpg 200w">
-        <h3>GoShopper</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Juni -->
   <footer>
     <div class="box_footer">
       <ul>
@@ -340,85 +281,6 @@
       <span>Republic of Korea.<br />Copyright © 2021 Droplet Inc.</span>
     </div>
   </footer>
-
-  <script>
-    // 3D phone
-    const container = document.querySelector(".container06");
-    const card = document.querySelector(".card06");
-    const sneaker = document.querySelector(".sneaker06 img");
-
-    container.addEventListener("mousemove", (e) => {
-      let xAxis = (window.innerWidth / 2 - e.screenX) / 200;
-      let yAxis = (window.innerHeight / 2 - e.screenY) / 200;
-      card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    });
-
-    container.addEventListener("mouseenter", (e) => {
-      card.style.transition = "none";
-      sneaker.style.transform = "translateZ(200px)";
-    });
-
-    container.addEventListener("mouseleave", (e) => {
-      card.style.transition = "all 0.5s ease";
-      card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-      sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
-    });
-
-    // slide image
-    const items = document.querySelectorAll('.slider img');
-    const nbSlide = items.length;
-    const suivant = document.querySelector('.right');
-    const precedent = document.querySelector('.left');
-    let count = 0;
-
-    function slideSuivante() {
-      items[count].classList.remove('active');
-      if (count < nbSlide - 1) {
-        count++;
-      } else {
-        count = 0;
-      }
-      items[count].classList.add('active')
-      console.log(count);
-    }
-    suivant.addEventListener('click', slideSuivante)
-
-    function slidePrecedente() {
-      items[count].classList.remove('active');
-      if (count > 0) {
-        count--;
-      } else {
-        count = nbSlide - 1;
-      }
-      items[count].classList.add('active')
-      console.log(count);
-    }
-    precedent.addEventListener('click', slidePrecedente)
-
-    // start of hover effect
-    let addClass = (elem) => {
-      elem.classList.add('activated');
-      elem.classList.remove('not-activated');
-    }
-    let removeClass = (elem) => {
-      elem.classList.remove('activated');
-      elem.classList.add('not-activated');
-    }
-    let imgHover = document.querySelectorAll('.img-hover');
-
-    for (i = 0; i < imgHover.length; i++) {
-      imgHover[i].addEventListener('mouseover', mouseOverEffect);
-      imgHover[i].addEventListener('mouseout', mouseOutEffect);
-
-      function mouseOverEffect() {
-        addClass(this);
-      }
-
-      function mouseOutEffect() {
-        removeClass(this);
-      }
-    }
-  </script>
 </body>
 
 </html>
