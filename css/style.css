@@ -453,7 +453,6 @@ button:hover {
   height: var(--MainHeight);
   background: url(/images/u/nite.jpg) no-repeat center center;
   background-size: cover;
-  text-align: center;
 }
 
 .u_text1 {
