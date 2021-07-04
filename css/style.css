@@ -69,7 +69,7 @@ section {
   --DeepWhiteColor: #eeeeee;
   --WhiteColor: #ffffff;
   --OrangeColor: #d99578;
-  --NavyColor: #0D1633;
+  --NavyColor: #0d1633;
   --PaleBlueColor: #293661;
 
   /* FONTSIZE */
@@ -690,7 +690,13 @@ input[name="tabmenu"] {
 }
 
 .ucon {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
 }
 
 .btn {
