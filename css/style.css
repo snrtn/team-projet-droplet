@@ -92,8 +92,8 @@ header {
 }
 
 .logo img {
-  width: 25px;
-  height: 23px;
+  width: 200px;
+  height: 100px;
   padding-right: 2px;
 }
 
@@ -357,8 +357,6 @@ header.active .sidenav {
 }
 
 .gallery {
-  /* flex-basis: 60%; */
-  /* margin-left: 100px; */
   z-index: 1;
 }
 
