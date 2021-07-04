@@ -472,9 +472,9 @@ button:hover {
 }
 
 .container_u {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   height: 25vh;
 }
 
@@ -483,8 +483,8 @@ button:hover {
   width: 160px;
   height: 160px;
   display: inline-block;
-  margin-left: 170px;
-  margin-top: 70px;
+  /* margin-left: 170px;
+  margin-top: 70px; */
 }
 
 .icon_u span {
