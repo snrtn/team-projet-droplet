@@ -719,7 +719,9 @@ input[name="tabmenu"] {
 input[id="tab1"]:checked ~ .slide1,
 input[id="tab2"]:checked ~ .slide2,
 input[id="tab3"]:checked ~ .slide3 {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  visibility: visible;
 }
 
 input[id="tab1"]:checked ~ .btn label[for="tab1"],
