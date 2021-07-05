@@ -4,25 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Droplet:Contact</title>
+
+  <!-- Favicon -->
   <link rel="icon" href="../images/favicon.ico" />
-  
+
+   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <link rel="import" href="../Nav_Foot/Navbar.html">
+
+  <!-- Style -->
   <link rel="stylesheet" href="../css/contact.css">
+
+  <!-- IMPORT NAVBAR/FOOTBAR -->
+  <link rel="import" href="../Nav_Foot/Navbar.html">
   <link rel="import" href="../Nav_Foot/Footbar.html">
 </head>
 
 <body>
+  <!-- IMPORT NAVBAR -->
   <div data-include-path="../Nav_Foot/Navbar.html"></div>
 
   <section id="my_section">
 
   </section>
 
+  <!-- IMPORT FOOTBAR -->
   <div data-include-path="../Nav_Foot/Footbar.html"></div>
 
   <script>
+    // to do import navbar/footbar
     window.addEventListener('load', function () {
       var allElements = document.getElementsByTagName('*');
       Array.prototype.forEach.call(allElements, function (el) {
