@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>asdasd</title>
+  <title>Document</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     @charset "utf-8";
 
@@ -21,7 +24,6 @@
     /* ########################################*/
     /* ########## DEFALT CCC ########## */
     /* ########################################*/
-
     * {
       font-family: "Noto Sans KR", sans-serif;
       margin: 0;
@@ -31,7 +33,6 @@
 
     body {
       -ms-overflow-style: none;
-      background-color: var(--WhiteColor);
     }
 
     ::-webkit-scrollbar {
@@ -50,58 +51,27 @@
       color: #eee;
     }
 
-    #container {
-      margin: 0%;
-      padding: 0%;
-    }
+    /* ########################################*/
+    /* ########## IMPORT VARIABLES ########## */
+    /* ########################################*/
+    @import url('../css/Variables.css');
 
-    section {
-      height: var(--MainHeight);
-      margin-bottom: 10px;
-    }
-
-    :root {
-      /* NAVBAR & FOOTER */
-      --MainWidth: 1100px;
-      --FullWidth: 100%;
-      --MdWidth: 50%;
-      --MainHeight: 600px;
-
-      /* COLOR */
-      --DeepBlackColor: #000000;
-      --BlackColor: #333333;
-      --DeepWhiteColor: #eeeeee;
-      --WhiteColor: #ffffff;
-      --OrangeColor: #d99578;
-      --NavyColor: #0d1633;
-      --PaleBlueColor: #293661;
-
-      /* FONTSIZE */
-      --SmFontSize: 15px;
-      --MdFontSize: 24px;
-      --BgFontSize: 32px;
-      --BBgFontSize: 100px;
-    }
+    /* ########################################*/
+    /* ########## HEADER ########## */
+    /* ########################################*/
 
     header {
       background-color: var(--BlackColor);
-      display: flex;
       width: 100%;
       height: 40px;
       z-index: 100;
-    }
-
-    .logo img {
-      width: 150px;
-      height: 40px;
-      padding-right: 2px;
     }
 
     .test {
       position: fixed;
       width: 100%;
       height: 40px;
-      transition: 0.5s;
+      background-color: rgba(51, 51, 51, 0.7);
 
       z-index: 100;
     }
@@ -118,16 +88,18 @@
 
     /* logo design  */
 
+    .logo {
+      padding-top: 3px;
+      box-sizing: border-box;
+    }
+
     .logo a {
       font-size: var(--MdFontSize);
       position: relative;
     }
 
-    #test {
-      display: inline-block;
-      color: #fff;
-      margin-top: -1px;
-      font-size: 10px;
+    .logo a img {
+      width: 80px;
     }
 
     /* nav design */
@@ -138,7 +110,7 @@
 
     .gnb li {
       font-size: var(--SmFontSize);
-      width: 150px;
+      width: 170px;
       padding: 10px;
       text-align: center;
       line-height: 20px;
@@ -201,8 +173,7 @@
     <div class="test">
       <div class="header-inner">
         <div class="logo">
-          <a href="/index.html"><img src="" /></a>
-          <p id="test">:작은 물방울</p>
+          <a href="/index.html"><img src="../images/droplet-logo(ver.2.1).png" /></a>
         </div>
         <nav>
           <ul class="gnb">
@@ -235,8 +206,11 @@
             </li>
           </ul>
         </nav>
+      </div>
     </div>
   </header>
+
+  <script src="../js/"></script>
 </body>
 
 </html>

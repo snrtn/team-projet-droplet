@@ -1,0 +1,25 @@
+/* ########################################*/
+/* ########## VAR() ########## */
+/* ########################################*/
+:root {
+  /* NAVBAR & FOOTER */
+  --MainWidth: 1100px;
+  --FullWidth: 100%;
+  --MdWidth: 50%;
+  --MainHeight: 600px;
+
+  /* COLOR */
+  --DeepBlackColor: #000000;
+  --BlackColor: #333333;
+  --DeepWhiteColor: #eeeeee;
+  --WhiteColor: #ffffff;
+  --OrangeColor: #d99578;
+  --NavyColor: #0d1633;
+  --PaleBlueColor: #293661;
+
+  /* FONTSIZE */
+  --SmFontSize: 15px;
+  --MdFontSize: 24px;
+  --BgFontSize: 32px;
+  --BBgFontSize: 100px;
+}

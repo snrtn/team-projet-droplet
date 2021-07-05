@@ -1,0 +1,13 @@
+/* ########################################*/
+/* ########## IMPORT VARIABLES ########## */
+/* ########################################*/
+@import url('../css/Variables.css');
+
+#my_section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: var(--FullWidth);
+  height: 2000px;
+  background-color: var(--DeepBlackColor);
+}

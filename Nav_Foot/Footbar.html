@@ -4,24 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  
   <style>
     @charset "utf-8";
 
     /* ########################################*/
     /* ########## Google Web Fonts CDN ########## */
     /* ########################################*/
-
     @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
     /* ########################################*/
     /* ########## Fontawesome 4.7 ########## */
     /* ########################################*/
-
     @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
     /* ########################################*/
     /* ########## DEFALT CCC ########## */
     /* ########################################*/
-
     * {
       font-family: "Noto Sans KR", sans-serif;
     }
@@ -47,127 +46,44 @@
       color: #eee;
     }
 
-    #container {
-      margin: 0%;
-      padding: 0%;
-    }
+    /* ########################################*/
+    /* ########## IMPORT VARIABLES ########## */
+    /* ########################################*/
+    @import url('../css/Variables.css');
 
-    section {
-      height: var(--MainHeight);
-      margin-bottom: 10px;
-    }
-
-    :root {
-      /* NAVBAR & FOOTER */
-      --MainWidth: 1100px;
-      --FullWidth: 100%;
-      --MdWidth: 50%;
-      --MainHeight: 600px;
-
-      /* COLOR */
-      --DeepBlackColor: #000000;
-      --BlackColor: #333333;
-      --DeepWhiteColor: #eeeeee;
-      --WhiteColor: #ffffff;
-      --OrangeColor: #d99578;
-      --NavyColor: #0d1633;
-      --PaleBlueColor: #293661;
-
-      /* FONTSIZE */
-      --SmFontSize: 15px;
-      --MdFontSize: 24px;
-      --BgFontSize: 32px;
-      --BBgFontSize: 100px;
-    }
-
+    /* ########################################*/
+    /* ########## footer ########## */
+    /* ########################################*/
     footer {
       width: var(--FullWidth);
-
-      height: 200px;
+      height: 70px;
 
       background-color: var(--BlackColor);
 
       display: flex;
       justify-content: center;
+    }
+
+    .my_footer {
+      width: var(--MainWidth);
+      height: inherit;
+
+      display: flex;
+      justify-content: flex-start;
       align-items: center;
     }
 
-    .box_footer {
-      width: var(--MainWidth);
-      height: 100px;
-
-      background-color: var(--BlackColor);
-    }
-
-    .box_footer ul {
-      display: inline-table;
-
-      width: 100px;
-
-      margin-right: 100px;
-      font-size: 18px;
-
-      cursor: pointer;
-
-      font-weight: bold;
-
+    .my_footer span {
       color: var(--WhiteColor);
-    }
-
-    .box_footer a {
-      color: var(--WhiteColor);
-      transition: 0.5s;
-
-      font-size: var(--SmFontSize);
-
-      display: inline-block;
-
-      padding-top: 10px;
-      font-weight: normal;
-    }
-
-    .box_footer a:hover {
-      color: var(--OrangeColor);
-    }
-
-    .box_footer span {
-      display: inline-table;
-
-      color: var(--WhiteColor);
-
-      line-height: 30px;
-
-      margin-left: 15px;
-
-      font-size: var(--SmFontSize);
+      line-height: 70px;
     }
   </style>
 </head>
 
 <body>
   <footer>
-    <div class="box_footer">
-      <ul>
-        소개
-        <li><a href="#none">제작자</a></li>
-        <li><a href="#none">모바일 앱</a></li>
-      </ul>
-      <ul>
-        전시일정
-        <li><a href="#none">일정</a></li>
-        <li><a href="#none">Covid-19</a></li>
-      </ul>
-      <ul>
-        전시관
-        <li><a href="#none">서양&르네상스</a></li>
-        <li><a href="#none">동양&현대미술</a></li>
-      </ul>
-      <ul>
-        FAQ
-        <li><a href="#none">상담</a></li>
-        <li><a href="#none">피드백</a></li>
-      </ul>
-      <span>Republic of Korea.<br />Copyright © 2021 Droplet Inc.</span>
+    <div class="my_footer">
+      <span>Copyright © 2021 Droplet Inc.</span>
     </div>
   </footer>
 </body>
