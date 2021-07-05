@@ -3,11 +3,101 @@
 /* ########################################*/
 @import url('../css/Variables.css');
 
-#my_section {
-  margin: 0;
+
+* {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: var(--MainFonts)
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
   width: var(--FullWidth);
-  height: 2000px;
-  background-color: var(--DeepBlackColor);
+  height: 690px;
+
+  background-color: var(--WhiteColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact_box input {
+  width: 500px;
+}
+
+.contact_box textarea {
+  height: 300px;
+}
+
+h2 {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: black;
+}
+
+
+.field {
+  width: 100%;
+  padding: 12px 24px;
+  outline: none;
+  border: none;
+  background-color: var(--BlackColor);
+  font-size: var(--SmFontSize);
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: var(--TransparentBlueColor);
+}
+
+.field:focus {
+  background-color: var(--WhiteColor);
+}
+
+.btn {
+  width: 100px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 12px;
+  align-items: center;
+  background-color: antiquewhite;
+  color: var(--BlackColor);
+  transition: 0.3s;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: var(--PaleBlueColor);
+  color: var(--WhiteColor);
 }

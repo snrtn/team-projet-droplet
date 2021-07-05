@@ -1,0 +1,29 @@
+/* ########################################*/
+/* ########## IMPORT VARIABLES ########## */
+/* ########################################*/
+@import url('../css/Variables.css');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--MainFonts)
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: var(--FullWidth);
+  height: 690px;
+
+  background-color: var(--WhiteColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

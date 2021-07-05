@@ -2,6 +2,9 @@
 /* ########## VAR() ########## */
 /* ########################################*/
 :root {
+  /* FONTS */
+  --MainFonts: url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
   /* NAVBAR & FOOTER */
   --MainWidth: 1100px;
   --FullWidth: 100%;
@@ -16,6 +19,7 @@
   --OrangeColor: #d99578;
   --NavyColor: #0d1633;
   --PaleBlueColor: #293661;
+  --TransparentBlueColor: #2936619a;
 
   /* FONTSIZE */
   --SmFontSize: 15px;
