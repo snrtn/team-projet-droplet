@@ -13,7 +13,7 @@
 /* ########################################*/
 /* ########## IMPORT VARIABLES ########## */
 /* ########################################*/
-@import url('../css/Variables.css');
+@import url("../css/Variables.css");
 
 /* ########################################*/
 /* ########## DEFALT CCC ########## */
@@ -51,7 +51,6 @@ a {
 section {
   height: var(--MainHeight);
   margin-bottom: 10px;
-
 }
 
 /* ########################################*/
@@ -125,7 +124,7 @@ header {
   position: relative;
 }
 
-.gnb li:hover>a {
+.gnb li:hover > a {
   color: #d99578;
 }
 
@@ -410,9 +409,11 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(180deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 0.8102591378348214) 96%);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 0.8102591378348214) 96%
+  );
 }
 
 .title-box {
@@ -540,9 +541,9 @@ button:hover {
   /* border: 1px solid darkblue; */
   /* background: url(/images/u/nite.jpg) no-repeat center center; */
   /* background-size: cover; */
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .tab-inner {
@@ -587,17 +588,17 @@ input[name="tabmenu"] {
   cursor: pointer;
 }
 
-input[id="tab1"]:checked~.slide1,
-input[id="tab2"]:checked~.slide2,
-input[id="tab3"]:checked~.slide3 {
+input[id="tab1"]:checked ~ .slide1,
+input[id="tab2"]:checked ~ .slide2,
+input[id="tab3"]:checked ~ .slide3 {
   /* display: block; */
   opacity: 1;
   visibility: visible;
 }
 
-input[id="tab1"]:checked~.btn label[for="tab1"],
-input[id="tab2"]:checked~.btn label[for="tab2"],
-input[id="tab3"]:checked~.btn label[for="tab3"] {
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
   background-color: crimson;
 }
 
