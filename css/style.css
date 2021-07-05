@@ -541,9 +541,9 @@ button:hover {
   /* border: 1px solid darkblue; */
   /* background: url(/images/u/nite.jpg) no-repeat center center; */
   /* background-size: cover; */
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 .tab-inner {
