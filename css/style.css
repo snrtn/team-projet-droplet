@@ -355,8 +355,8 @@ button:hover {
   height: 160px;
   display: flex;
   text-align: center;
-  /* margin-left: 170px;
-  margin-top: 70px; */
+  margin-left: 170px;
+  margin-top: 70px;
 }
 
 .icon_u span {
