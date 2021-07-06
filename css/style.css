@@ -353,10 +353,10 @@ button:hover {
   /* border: 1px solid white; */
   width: 160px;
   height: 160px;
-  display: flex;
-  text-align: center;
-  margin-left: 170px;
-  margin-top: 70px;
+  display: inline-block;
+  /* text-align: center; */
+  /* margin-left: 170px;
+  margin-top: 70px; */
 }
 
 .icon_u span {
