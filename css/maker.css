@@ -3,12 +3,14 @@
 /* ########################################*/
 @import url('../css/Variables.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--MainFonts)
+  font-family: var(--MainFonts);
 }
 
 body {
@@ -60,6 +62,7 @@ body {
   font-size: 30px;
   line-height: 1.5;
   font-style: italic;
+  font-family: 'Pacifico', cursive;
 }
 
 .name_job {
@@ -73,8 +76,9 @@ body {
 
 .name_job_list {
   animation-name: rolling;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
+  animation-direction: reverse;
 }
 
 .name_title {
@@ -85,15 +89,19 @@ body {
   0% {
     margin-top: 0;
   }
+
   25% {
     margin-top: -1.5em;
   }
+
   50% {
     margin-top: -3em;
   }
+
   75% {
     margin-top: -4.5em;
   }
+
   100% {
     margin-top: -6em;
   }
