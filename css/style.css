@@ -330,7 +330,7 @@ button:hover {
 
 .container_u {
   display: relative;
-  height: 35vh;
+  height: 60vh;
   text-align: center;
 }
 
@@ -350,12 +350,10 @@ button:hover {
 
 .icon_u {
   /* border: 1px solid white; */
+  top: 300px;
   width: 160px;
   height: 160px;
   display: inline-block;
-  /* text-align: center; */
-  /* margin-left: 170px;
-  margin-top: 70px; */
 }
 
 .icon_u span {
