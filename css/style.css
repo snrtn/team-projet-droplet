@@ -331,6 +331,7 @@ button:hover {
 .container_u {
   display: relative;
   height: 35vh;
+  text-align: center;
 }
 
 .u_text1 {
