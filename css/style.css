@@ -219,6 +219,7 @@ header {
   width: var(--FullWidth);
   height: var(--MainHeight);
   background-color: var(--BlackColor);
+  background: linear-gradient(#3f4d90, #3f898a);
 }
 
 .wrapper {
