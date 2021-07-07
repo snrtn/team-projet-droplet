@@ -218,39 +218,53 @@ header {
 .section02 {
   width: var(--FullWidth);
   height: var(--MainHeight);
-  background-color: var(--BlackColor);
-  background: linear-gradient(#3f4d90, #3f898a);
+  /* background-color: var(--BlackColor); */
+  /* background: linear-gradient(#3f4d90, #3f898a); */
+  background: url(/images/moni/5172658.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 .wrapper {
   width: var(--MainWidth);
-  margin: auto;
   height: 100%;
+  margin-left: 10%;
+ /*  margin: auto; */
   display: flex;
   align-items: center;
 }
 
 .gallery {
-  z-index: 1;
+ /*  margin-left: 10%; */
+  /* z-index: 1; */
+ /*  border: 1px solid #fff; */
+  text-align: center;
 }
 
-h1 {
+.gallery h1 {
   color: #fff;
-  font-size: 40px;
+  font-size: 60px;
+  margin-bottom: 0;
 }
 
-p {
+.gallery p {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
 }
+
+/* .gallery a {
+  color: #000;
+  background-color: #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+} */
 
 button {
-  width: 130px;
+  /* width: 130px; */
   color: #000;
   background: #fff;
-  font-size: 14px;
-  padding: 7px;
-  border-radius: 20px;
+  font-size: 15px;
+  padding: 7px 20px;
+  border-radius: 3px;
   border: none;
   margin-top: 20px;
   cursor: pointer;
@@ -259,54 +273,16 @@ button {
   position: relative;
 }
 
-.content {
-  width: 730px;
-  /*  height: 730px; */
-  /* border: 1px solid red; */
-  left: 45%;
-  text-align: center;
-  margin-left: 35px;
-}
-
-.photo {
-  /* border: 1px solid red; */
-  display: inline-block;
-  text-align: center;
-  line-height: 10px;
-  /* border-radius: 10px; */
-  padding: 0 20px;
-  padding-top: 7px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 15px;
-  transition: 0.5s;
-}
-
-h4 {
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-bottom: 0;
-}
-
-.photo p {
-  font-size: 12px;
-  text-shadow: 0 0 5px #000;
-}
-
-.photo:hover {
-  transform: translateY(-20px);
-}
-
 button::after {
   content: "";
   position: absolute;
-  width: 0;
-  height: 100%;
-  background-color: rgb(91, 134, 17);
   top: 0;
   left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(101, 167, 171);
   z-index: -1;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 button:hover::after {
@@ -316,6 +292,79 @@ button:hover::after {
 button:hover {
   color: #fff;
 }
+
+.content {
+  border: 1px solid #fff;
+  height: 500px;
+  /* width: 100%; */
+  margin: 10%;
+  overflow: hidden;
+  /* position: relative; */
+  text-align: center;
+}
+
+.photo {
+  display: inline-block;
+  line-height: 10px;
+  padding: 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.photo h4 {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0;
+}
+
+.photo img {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.photo p {
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.photo:hover {
+  transform: translateY(-20px);
+}
+
+/* .content {
+  border: 1px solid #000;
+  text-align: center;
+}
+.photo {
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+  border: 1px solid red;
+  position: relative;
+}
+.caption {
+  width: 150px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.photo:hover .caption {
+  opacity: 1;
+} */
 
 /* ########################################*/
 /* ########## SECTION03 ########## */
