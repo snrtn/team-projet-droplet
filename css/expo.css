@@ -4,6 +4,9 @@
 /* Fontawesome 4.7 */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+/* IMPORT VARIABLES */
+@import url("../css/Variables.css");
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   line-height: 1.5em;
