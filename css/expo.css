@@ -1,0 +1,290 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: 300;
+  width: var(--FullWidth);
+  height: var(--MainHeight);
+  background-color: rgb(192, 204, 197);
+}
+/* 좌측 or 우측 햄버거 버튼 클릭 시, 왼쪽 or 오른쪽 사이드바가 나타나는 것이므로 flex 필요 없음. */
+/* 사이드바 자체에 height 설정할 것이므로, body에는 설정하지 않음  */
+
+a {
+  text-decoration: none;
+  color: rgb(196, 198, 211);
+}
+
+.bcon1_uu {
+  position: relative;
+  /* border: 1px solid blue; */
+}
+
+.bcon1t_uu {
+  position: absolute;
+  top: 60px;
+  left: 500px;
+  width: 700px;
+  height: 60px;
+  font-size: 50px;
+  text-align: center;
+  background: rgb(158, 212, 103);
+  /* border: 1px solid red; */
+}
+
+.scon1_uu {
+  position: absolute;
+  top: 90px;
+  left: 500px;
+  width: 700px;
+  margin-top: 50px;
+  /* border: 1px solid goldenrod; */
+}
+/* 실제로 레이아웃(위치,크기)를 잡는 class는 scon1_uu, scon2_uu이다. */
+/* position: absolute가 아니면 레이아웃의 위치를 정확히 잡을 수 없다. */
+
+.box1_uu {
+  display: flex;
+  width: 700px;
+  /* border: 1px solid purple; */
+}
+/* display: flex를 주지 않으면, div 속성이라 block 표시됨. */
+
+.sgm1_uu {
+  width: 180px;
+  height: 180px;
+}
+
+.sgm2_uu {
+  width: 520px;
+  height: 180px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.box2_uu {
+  padding: 20px 0 15px 0;
+  width: 700px;
+  height: 520px;
+  line-height: 1.8em;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+.scon2_uu {
+  position: absolute;
+  top: 90px;
+  left: 1200px;
+  width: 520px;
+  height: 700px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 0 0 0 20px;
+  /* border: 1px solid yellowgreen; */
+}
+/* 실제로 레이아웃(위치,크기)를 잡는 class는 scon1_uu, scon2_uu이다. */
+/* position: absolute가 아니면 레이아웃의 위치를 정확히 잡을 수 없다. */
+
+.scon2_uu img {
+  border-radius: 29% 71% 31% 69% / 74% 9% 91% 26%;
+}
+
+.bcon2_uu {
+  position: absolute;
+  top: 800px;
+  left: 500px;
+}
+
+.bcon2t_uu {
+  position: absolute;
+  top: 150px;
+  width: 800px;
+  height: 60px;
+  font-size: 50px;
+  text-align: center;
+  background: rgb(212, 186, 103);
+  /* border: 1px solid red; */
+}
+
+.bcon2c_uu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card_uu {
+  margin: 20px;
+  position: relative;
+  top: 50px;
+  width: 375px;
+  height: 498px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.content_uu {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, blue, transparent);
+  color: #fff;
+  text-align: center;
+  padding-top: 280px;
+  transition: 0.5s;
+}
+
+.card_uu:nth-child(1) .content_uu {
+  background: linear-gradient(to top, dodgerblue, transparent);
+}
+.card_uu:nth-child(2) .content_uu {
+  background: linear-gradient(to top, green, transparent);
+}
+.card_uu:nth-child(3) .content_uu {
+  background: linear-gradient(to top, crimson, transparent);
+}
+
+.content_uu h2 {
+  font-size: 1.9em;
+}
+
+.content_uu h2 span {
+  display: block;
+  font-size: 16px;
+  color: gold;
+  margin-top: 10px;
+}
+
+.sns_uu a {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  /* font-size: 13px; */
+  /* line-height: 22px; */
+}
+
+.card_uu:hover .content_uu {
+  top: 0;
+}
+
+.card_uu:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px #000;
+}
+
+input[id="trigger_uu"] {
+  display: none;
+}
+/*input을 type=checkbox로 지정하면 다른 checkbox까지 영향을 줌. 쓰지 말 것. */
+
+label[for="trigger_uu"] {
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  left: 25px;
+  top: 10%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+label[for="trigger_uu"] span {
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  left: 0;
+  transition: 0.3s;
+}
+label[for="trigger_uu"] span:nth-child(1) {
+  top: 0;
+}
+label[for="trigger_uu"] span:nth-child(2) {
+  top: 50%;
+}
+label[for="trigger_uu"] span:nth-child(3) {
+  top: 100%;
+}
+/* top 값을 몇 px로 주느냐에 따라 x의 위치가 상하로 이동 */
+
+.snb_uu {
+  background-color: rgb(9, 22, 44);
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  position: relative;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+/* sidebar는 언제 클릭해도 항상 정해진 위치(이 파일에서는 오른쪽)에 나타나야 하므로, position=fixed 이어야 함 */
+/* sidebar는 처음에는 숨어있어야 하므로 right값은 0이 아닌 width만큼의 -값을 준다 */
+
+.snb_uu h2 {
+  color: rgb(221, 211, 208);
+  padding: 50px 10px 10px 30px;
+  position: relative;
+}
+
+.snb_uu ul {
+  color: rgb(182, 179, 178);
+  padding: 20px 10px 10px 30px;
+  position: relative;
+}
+
+.snb_uu ul a {
+  color: rgb(182, 179, 178);
+  font-size: 1.1em;
+  list-style: none;
+  padding: 15px;
+  display: block;
+  transition: 0.5s;
+}
+
+.snb_uu ul:hover a {
+  opacity: 0.5;
+}
+
+.snb_uu ul a:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.snbimage_uu {
+  padding: 30px;
+}
+
+input[id="trigger_uu"]:checked + label[for="trigger_uu"] span:nth-child(1) {
+  top: 15px;
+  transform: rotate(45deg);
+}
+input[id="trigger_uu"]:checked + label[for="trigger_uu"] span:nth-child(2) {
+  opacity: 0;
+}
+input[id="trigger_uu"]:checked + label[for="trigger_uu"] span:nth-child(3) {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+input[id="trigger_uu"]:checked ~ .snb_uu {
+  left: 0;
+  top: 0;
+}
+input[id="trigger_uu"]:checked + label[for="trigger_uu"] {
+  left: 315px;
+}
