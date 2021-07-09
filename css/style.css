@@ -412,8 +412,8 @@ button:hover {
   color: white;
   width: 320px;
   text-align: center;
-  top: -35%;
-  padding: 10px;
+  top: -5%;
+  padding: 5px;
   border-radius: 5px;
   left: 50%;
   transform: translateX(-50%);
