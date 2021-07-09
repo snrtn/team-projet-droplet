@@ -12,14 +12,139 @@ body {
   line-height: 1.5em;
   margin: 0;
   font-weight: 300;
-  width: var(--FullWidth);
-  height: var(--MainHeight);
-  background-color: rgb(192, 204, 197);
 }
-/* 좌측 or 우측 햄버거 버튼 클릭 시, 왼쪽 or 오른쪽 사이드바가 나타나는 것이므로 flex 필요 없음. */
-/* 사이드바 자체에 height 설정할 것이므로, body에는 설정하지 않음  */
 
 a {
   text-decoration: none;
   color: rgb(196, 198, 211);
+}
+
+.tabinner_uu {
+}
+
+input[name="tm"] {
+  display: none;
+}
+
+.tabs_uu {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.items_uu {
+  /* border: 1px solid red; */
+  height: 100vh;
+  width: 300%;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.items_uu div {
+  /* border: 1px solid blue; */
+  height: 100vh;
+  float: left;
+  width: 33.33333%;
+  box-sizing: border-box;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.items_uu div:nth-child(1) {
+  background: url(d:/Coding/html_css/fs1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.items_uu div:nth-child(2) {
+  background: url(d:/Coding/html_css/fs2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.items_uu div:nth-child(3) {
+  background: url(d:/Coding/html_css/fs3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.items_uu div:nth-child(1):before,
+.items_uu div:nth-child(2):before,
+.items_uu div:nth-child(3):before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.items_uu div:nth-child(1):before {
+  background: linear-gradient(135deg, green, transparent);
+}
+.items_uu div:nth-child(2):before {
+  background: linear-gradient(135deg, gold, transparent);
+}
+.items_uu div:nth-child(3):before {
+  background: linear-gradient(135deg, crimson, transparent);
+}
+
+.items_uu div h1 {
+  font-size: 75px;
+  font-weight: normal;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn_uu {
+  position: absolute;
+  bottom: 20px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn_uu label {
+  display: inline-block;
+  /* height: 10px;
+  width: 75px;
+  background-color: white; */
+  cursor: pointer;
+  color: #fff;
+  margin: 0 15px;
+}
+
+input[id="t1"]:checked ~ .tabs_uu .items_uu {
+  left: 0;
+}
+input[id="t2"]:checked ~ .tabs_uu .items_uu {
+  left: -100%;
+}
+input[id="t3"]:checked ~ .tabs_uu .items_uu {
+  left: -200%;
+}
+
+input[id="t1"]:checked ~ .btn_uu label[for="t1"],
+input[id="t2"]:checked ~ .btn_uu label[for="t2"],
+input[id="t3"]:checked ~ .btn_uu label[for="t3"] {
+  color: crimson;
+}
+
+input[id="t1"]:checked ~ .tabs_uu .items_uu div:nth-child(1) h1 {
+  transform: translateY(200px);
+  opacity: 1;
+}
+input[id="t2"]:checked ~ .tabs_uu .items_uu div:nth-child(2) h1 {
+  transform: translateY(200px);
+  opacity: 1;
+}
+input[id="t3"]:checked ~ .tabs_uu .items_uu div:nth-child(3) h1 {
+  transform: translateY(200px);
+  opacity: 1;
 }
