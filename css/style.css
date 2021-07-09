@@ -614,6 +614,10 @@ input[name="tabmenu"] {
   /* border: 5px solid yellowgreen; */
 }
 
+.ucon a img {
+  border: 1px solid yellow;
+}
+
 .btn {
   /* border: 1px solid blue; */
   position: absolute;
