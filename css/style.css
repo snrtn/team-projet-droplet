@@ -399,7 +399,7 @@ button:hover {
 
 .icon_u {
   /* border: 1px solid white; */
-  top: 100px;
+  padding: 100px;
   width: 160px;
   height: 160px;
   display: inline-block;
