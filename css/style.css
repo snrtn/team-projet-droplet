@@ -611,7 +611,7 @@ input[name="tabmenu"] {
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-  border: 5px solid yellowgreen;
+  /* border: 5px solid yellowgreen; */
 }
 
 .btn {
