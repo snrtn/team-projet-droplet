@@ -92,7 +92,7 @@ input[name="tm"] {
   position: relative;
   text-align: center;
   color: #fff;
-  transform: translateY(-700px);
+  transform: translateY(-200px);
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.5s;
@@ -137,14 +137,14 @@ input[id="t3"]:checked ~ .btn_uu label[for="t3"] {
 }
 
 input[id="t1"]:checked ~ .tabs_uu .items_uu div:nth-child(1) h1 {
-  transform: translateY(200px);
+  transform: translateY(400px);
   opacity: 1;
 }
 input[id="t2"]:checked ~ .tabs_uu .items_uu div:nth-child(2) h1 {
-  transform: translateY(200px);
+  transform: translateY(400px);
   opacity: 1;
 }
 input[id="t3"]:checked ~ .tabs_uu .items_uu div:nth-child(3) h1 {
-  transform: translateY(200px);
+  transform: translateY(400px);
   opacity: 1;
 }
