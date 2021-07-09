@@ -92,7 +92,7 @@ input[name="tm"] {
   position: relative;
   text-align: center;
   color: #fff;
-  transform: translateY(-200px);
+  transform: translateY(-300px);
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.5s;
