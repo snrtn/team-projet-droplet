@@ -616,6 +616,7 @@ input[name="tabmenu"] {
 
 .ucon a img {
   border: 1px solid yellow;
+  opacity: 0.4;
 }
 
 .btn {
