@@ -618,7 +618,7 @@ input[name="tabmenu"] {
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 10px;
+  bottom: 0;
 }
 
 .btn label {
