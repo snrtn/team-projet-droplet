@@ -615,7 +615,7 @@ input[name="tabmenu"] {
 }
 
 .ucon a img {
-  box-shadow: 10px 0 10px 0 rgb(190, 240, 255);
+  box-shadow: 0 0 10px 0 rgb(190, 240, 255);
 }
 
 .btn {
