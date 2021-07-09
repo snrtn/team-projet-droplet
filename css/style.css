@@ -228,15 +228,15 @@ header {
   width: var(--MainWidth);
   height: 100%;
   margin-left: 10%;
- /*  margin: auto; */
+  /*  margin: auto; */
   display: flex;
   align-items: center;
 }
 
 .gallery {
- /*  margin-left: 10%; */
+  /*  margin-left: 10%; */
   /* z-index: 1; */
- /*  border: 1px solid #fff; */
+  /*  border: 1px solid #fff; */
   text-align: center;
 }
 
