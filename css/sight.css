@@ -55,15 +55,15 @@ input[name="tm"] {
 }
 
 .items_uu div:nth-child(1) {
-  background: url(d:/Coding/html_css/fs1.jpg) no-repeat center center fixed;
+  background: url(../images/u/fs1.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 .items_uu div:nth-child(2) {
-  background: url(d:/Coding/html_css/fs2.jpg) no-repeat center center fixed;
+  background: url(../images/u/fs2.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 .items_uu div:nth-child(3) {
-  background: url(d:/Coding/html_css/fs3.jpg) no-repeat center center fixed;
+  background: url(../images/u/fs3.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
