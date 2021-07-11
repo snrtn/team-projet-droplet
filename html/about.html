@@ -2,79 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>title</title>
+  <title>Droplet: about</title>
   <link rel="icon" href="../images/favicon.ico" />
 
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
 
   <!-- Style -->
-  <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/about.css">
 
-  <!-- Js -->
-  <script src="js/main.js" defer></script>
+  <!-- IMPORT NAVBAR/FOOTBAR -->
+  <link rel="import" href="../Nav_Foot/Navbar.html">
+  <link rel="import" href="../Nav_Foot/Footbar.html">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="test">
-      <div class="header-inner">
-        <div class="logo">
-          <a href="/index.html"><img src="/images/juni/dd.png" />Droplet</a>
-          <p id="test">:작은 물방울</p>
-        </div>
-        <nav>
-          <ul class="gnb">
-            <li>
-              <a href="#none">ABOUT</a>
-              <ul class="menu">
-                <li><a href="#none">About Us</a></li>
-                <li><a href="../html/maker.html">Maker</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none">NOW</a>
-              <ul class="menu">
-                <li><a href="/html/expo.html">Exposition</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none">EXPLORER</a>
-              <ul class="menu">
-                <li><a href="/html/art.html">Arts</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none">FAQ</a>
-              <ul class="menu">
-                <li><a href="../html/contact.html">Contact</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="side_box">
-          <i class="fa fa-search search"></i>
-          <div class="hambuger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <div class="sidenav">
-        <div class="logo">
-          <a href="/index.html"><img src="/images/juni/dd.png" />Droplet</a>
-        </div>
-        <ul>
-          <li><a href="#none">About</a></li>
-          <li><a href="#">NOW</a></li>
-          <li><a href="#none">EXPLORER</a></li>
-          <li><a href="#none">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  <!-- IMPORT NAVBAR -->
+  <div data-include-path="../Nav_Foot/Navbar.html"></div>
+
   <!-- SECTION : now-exposition-->
   <section class="now-exposition">
     <div class="now-inner">
@@ -106,23 +50,23 @@
       <div class="card-stacked">
         <div class="card-ui" style="--i:-1">
           <div class="card-content" style="--j:1">
-            <h3>Card 01</h3>
+            <h3>빠른 정보 탐색</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi enim a voluptates iure assumenda veniam, ab accusamus illo, delectus deserunt aliquam perspiciatis laborum eligendi ex provident facilis. Adipisci, ab voluptatibus.
             </p>
           </div>
         </div>
-        <div class="card-ui" style="--i:-2">
+        <div class="card-ui" style="--i:0">
           <div class="card-content" style="--j:2">
-            <h3>Card 02</h3>
+            <h3>특별한 명화 감상</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi enim a voluptates iure assumenda veniam, ab accusamus illo, delectus deserunt aliquam perspiciatis laborum eligendi ex provident facilis. Adipisci, ab voluptatibus.
             </p>
           </div>
         </div>
-        <div class="card-ui" style="--i:-3">
+        <div class="card-ui" style="--i:1">
           <div class="card-content" style="--j:3">
-            <h3>Card 03</h3>
+            <h3>편리한 모바일 APP</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi enim a voluptates iure assumenda veniam, ab accusamus illo, delectus deserunt aliquam perspiciatis laborum eligendi ex provident facilis. Adipisci, ab voluptatibus.
             </p>
@@ -131,5 +75,48 @@
       </div>
     </div>
   </section>
+
+  <!-- SECTION : App-intro -->
+  <section class="app">
+    <div class="app-inner">
+      <div class="app-left">
+        <h2>스마트폰에서도 Droplet을 이용할 수 있어요</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint?
+        </p>
+        <div class="btn-download">
+          <a href="#"><img src="../images/seon/btn-appstore.png" alt="appstore"></a>
+          <a href="#"><img src="../images/seon/btn-playstore.png" alt="playstore"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+      <div class="app-right">
+        <img src="../images/seon/mockup.png" alt="mockup">
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORT FOOTBAR -->
+  <div data-include-path="../Nav_Foot/Footbar.html"></div>
+
+  <script>
+    // to do import navbar/footbar
+    window.addEventListener('load', function () {
+      var allElements = document.getElementsByTagName('*');
+      Array.prototype.forEach.call(allElements, function (el) {
+        var includePath = el.dataset.includePath;
+        if (includePath) {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              el.outerHTML = this.responseText;
+            }
+          };
+          xhttp.open('GET', includePath, true);
+          xhttp.send();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
