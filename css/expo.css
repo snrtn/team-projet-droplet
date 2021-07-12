@@ -27,24 +27,25 @@ a {
 .bcon1_uu {
   position: relative;
   /* border: 1px solid blue; */
+  height: calc(100vh - 50px);
 }
 
 .bcon1t_uu {
   position: absolute;
   top: 60px;
-  left: 500px;
+  left: 200px;
   width: 700px;
-  height: 60px;
+  height: 100vh;
   font-size: 50px;
   text-align: center;
-  background: rgb(158, 212, 103);
+  /* background: rgb(158, 212, 103); */
   /* border: 1px solid red; */
 }
 
 .scon1_uu {
   position: absolute;
   top: 90px;
-  left: 500px;
+  left: 200px;
   width: 700px;
   margin-top: 50px;
   /* border: 1px solid goldenrod; */
@@ -85,13 +86,14 @@ a {
 .scon2_uu {
   position: absolute;
   top: 90px;
-  left: 1200px;
+  left: 800px;
   width: 520px;
   height: 700px;
   box-sizing: border-box;
   margin-top: 50px;
   padding: 0 0 0 20px;
   /* border: 1px solid yellowgreen; */
+  opacity: 0.5;
 }
 /* 실제로 레이아웃(위치,크기)를 잡는 class는 scon1_uu, scon2_uu이다. */
 /* position: absolute가 아니면 레이아웃의 위치를 정확히 잡을 수 없다. */
@@ -102,8 +104,8 @@ a {
 
 .bcon2_uu {
   position: absolute;
-  top: 800px;
-  left: 500px;
+  top: 700px;
+  left: 200px;
 }
 
 .bcon2t_uu {
@@ -125,9 +127,9 @@ a {
 }
 
 .card_uu {
-  margin: 20px;
+  margin-right: 20px;
   position: relative;
-  top: 50px;
+  top: 100px;
   width: 375px;
   height: 498px;
   overflow: hidden;
@@ -192,7 +194,7 @@ a {
 }
 
 input[id="trigger_uu"] {
-  display: none;
+  
 }
 /*input을 type=checkbox로 지정하면 다른 checkbox까지 영향을 줌. 쓰지 말 것. */
 
@@ -201,7 +203,6 @@ label[for="trigger_uu"] {
   width: 30px;
   height: 20px;
   display: block;
-  position: absolute;
   cursor: pointer;
   left: 25px;
   top: 10%;
@@ -209,7 +210,6 @@ label[for="trigger_uu"] {
   transition: 0.5s;
 }
 label[for="trigger_uu"] span {
-  position: absolute;
   height: 2px;
   background-color: #000;
   width: 100%;
